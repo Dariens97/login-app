@@ -1,0 +1,43 @@
+.gris{
+    color: #808080; /* naranja */
+    font-weight: bold;}
+
+.navbar-gradient {
+       background: linear-gradient(to right, #000000, #555555); /* negro a gris */
+    }
+.fuente-personalizada {
+      font-family: "Work Sans", sans-serif;
+    }
+
+.carousel-background {
+    background-image: url('./img/fondo.jpg'); /* Cambia por tu ruta de fondo */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+    .carousel-overlay {
+    position: relative;
+    z-index: 2;
+}
+.carousel-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+.carousel-container .carousel,
+.carousel-container .carousel-inner,
+.carousel-container .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-container .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
