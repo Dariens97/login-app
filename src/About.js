@@ -30,7 +30,7 @@ const AboutUs = () => {
 
         <Row className="text-center">
           <Col md={4}>
-            <Card className="bg-transparent  border-0">
+            <Card className="bg-transparent shadow border-0">
               <Card.Body>
                 <h4>🔐 Nuestra Misión</h4>
                 <p>
