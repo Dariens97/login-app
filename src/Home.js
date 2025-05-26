@@ -18,6 +18,7 @@ function Home() {
         </p>
       )
     },
+    
     {
       src: "/img/arbol 2.jpg",
       alt: "Servicio 2"
