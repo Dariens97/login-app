@@ -2,7 +2,7 @@ import React from "react";
 import "./colores.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './Logo-NETCE-png.png';
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from './Home';
 import Footer from './Footer';
 import Contact from "./Contact";
