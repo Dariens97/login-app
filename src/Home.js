@@ -14,11 +14,11 @@ function Home() {
         <p style={{ background: '#222', color: '#fff', fontSize: '1.2rem', lineHeight: '1.6' }}>
           Se decidió ayudar a combatir el cambio climático y sus efectos
           producto en gran parte por nuestras acciones. Por cada proyecto aprobado se donará un árbol
-          y se le entregará una tarjeta al cliente por su aporte al programa.
+          y se le entregará una tarjeta al cliente por su aporte al programa revive un arbol.
         </p>
       )
     },
-    
+
     {
       src: "/img/arbol 2.jpg",
       alt: "Servicio 2"
