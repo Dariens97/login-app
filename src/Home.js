@@ -8,7 +8,7 @@ function Home() {
 
   const imagenes = [
     {
-      src: "/img/arbol 1.jpg",
+      src: process.env.PUBLIC_URL + "/img/arbol 1.jpg",
       alt: "Servicio 1",
       contenido: (
         <p style={{ background: '#222', color: '#fff', fontSize: '1.2rem', lineHeight: '1.6' }}>
@@ -18,6 +18,7 @@ function Home() {
         </p>
       )
     },
+    
     {
       src: "/img/arbol 2.jpg",
       alt: "Servicio 2"
