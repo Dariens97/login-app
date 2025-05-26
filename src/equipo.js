@@ -47,7 +47,7 @@ const equipo = [
   {
     nombre: 'Dariens Echeverria M.',
     cargo: 'Gerente De negocios',
-    imagen: '/img/Dariens negocios.jpg'
+    imagen: process.env.PUBLIC_URL + '/img/Dariens negocios.jpg'
   },
   {
     nombre: 'Claudio Caffi A.',
