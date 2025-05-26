@@ -156,7 +156,64 @@ function Home() {
                 </div>
               )}
 
-              {/* Agrega tus otras secciones aquí como hiciste antes (networking, camaras, etc.) */}
+              {detalleActivo === 'networking' && (
+                <div className="container mt-5  row text-center justify-content-between ">
+                  <h4>Networking</h4>
+                  <div className="col-md-3 bg-light p-4 rounded shadow">
+                    <h5>Diseño de Redes LAN</h5>
+                    <p className="fuente-personalizada"> Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable, adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando:
+
+                        Servidores ISE
+
+                        Plataforma Cisco Prime
+
+                        Configuración de Firewall y Appliance
+
+                        Políticas de calidad de servicio (QoS)
+
+                        Administración de redes LAN</p>
+                  </div>
+                  <div className="col-md-3 bg-light p-4 rounded shadow">
+                    <h5>Soluciones WiFi</h5>
+                    <p className="fuente-personalizada"> Ofrecemos una solución integral para su red inalámbrica, que incluye:
+
+                        Análisis de cobertura, dimensionamiento y detección de vulnerabilidades
+
+                        Configuración y administración de tecnología WLC mediante AP ligeros o redes con AP autónomos
+
+                        Implementación completa de redes WiFi</p>
+                  </div>
+                  <div className="col-md-3 bg-light p-4 rounded shadow">
+                    <h5>Cableado Estructurado</h5>
+                    <p className="fuente-personalizada"> Realizamos el levantamiento, diseño y proyección del cableado estructurado, además del mantenimiento preventivo y correctivo para asegurar un rendimiento óptimo del sistema.</p>
+                  </div>
+                </div>
+              )}
+              {detalleActivo === 'camaras' && (
+                <div className="container mt-5  row text-center justify-content-between ">
+                  <h4>Cámaras y Alarmas</h4>
+                  
+                    <h5>Cableado Estructurado</h5>
+                    <div className="col-md-2 bg-light p-4 rounded shadow">
+                      <h5>Inside</h5>
+                      <p className="fuente-personalizada"> Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.</p>
+                    </div>
+                    <div className="col-md-3 bg-light p-4 rounded shadow">
+                      <h5>Perimetral</h5>
+                      <p className="fuente-personalizada"> Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.</p>
+                    </div>
+                    <div className="col-md-3 bg-light p-4 rounded shadow">
+                      <h5>Alarmas Comunitarias</h5>
+                      <p className="fuente-personalizada"> Proteja a su familia y comunidad con nuestras soluciones colectivas. Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.</p>
+                    </div>
+                    <div className="col-md-3 bg-light p-4 rounded shadow">
+                      <h5>Mantención de Equipos</h5>
+                      <p className="fuente-personalizada"> Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.</p>
+                    </div>
+
+                  
+                </div>
+              )}
 
               <motion.button
                 className="btn btn-secondary mt-4"
