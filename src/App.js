@@ -28,7 +28,7 @@ function Navigation() {
         <Link className="navbar-brand d-flex align-items-center" to="/">
           
           <div className="d-none d-md-block text-start"style={{float:"left"}}>
-            <img src={logo} alt="Logo" width="120" className="me-2" />
+            <img src={logo} alt="Logo" width="100" className="me-2" />
             
             <div>
               <small className="gris">Soluciones Tecnológicas a Tu Medida</small>
