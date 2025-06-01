@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/login-app/static/css/main.ecca2e3b.css",
-    "main.js": "/login-app/static/js/main.71fe2d61.js",
+    "main.js": "/login-app/static/js/main.b8e4b36a.js",
     "static/js/453.fb4c1376.chunk.js": "/login-app/static/js/453.fb4c1376.chunk.js",
     "static/media/fondo.jpg": "/login-app/static/media/fondo.2d06e61af08e25aceac7.jpg",
-    "static/media/Logo-NETCE-png.png": "/login-app/static/media/Logo-NETCE-png.398c32f0a904fccd3236.png",
     "index.html": "/login-app/index.html",
     "main.ecca2e3b.css.map": "/login-app/static/css/main.ecca2e3b.css.map",
-    "main.71fe2d61.js.map": "/login-app/static/js/main.71fe2d61.js.map",
+    "main.b8e4b36a.js.map": "/login-app/static/js/main.b8e4b36a.js.map",
     "453.fb4c1376.chunk.js.map": "/login-app/static/js/453.fb4c1376.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecca2e3b.css",
-    "static/js/main.71fe2d61.js"
+    "static/js/main.b8e4b36a.js"
   ]
 }
