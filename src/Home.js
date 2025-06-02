@@ -8,24 +8,22 @@ function Home() {
 
   const imagenes = [
     {
-      src: process.env.PUBLIC_URL + "/img/arbol 1.jpg",
-      alt: "Servicio 1",
-      contenido: (
-        <p style={{ background: '#222', color: '#fff', fontSize: '1.2rem', lineHeight: '1.6' }}>
-          Se decidió ayudar a combatir el cambio climático y sus efectos
-          producto en gran parte por nuestras acciones. Por cada proyecto aprobado se donará un árbol
-          y se le entregará una tarjeta al cliente por su aporte al programa revive una.
-        </p>
-      )
+      src: process.env.PUBLIC_URL + "/img/arbol 2.jpg",
+      alt: "Servicio 1"
     },
 
     {
-      src: process.env.PUBLIC_URL + "/img/arbol 2.jpg",
+      src: process.env.PUBLIC_URL + "/img/imagen seguridad.png",
       alt: "Servicio 2"
+
     },
     {
-      src: process.env.PUBLIC_URL + "/img/cableado.png",
+      src: process.env.PUBLIC_URL + "/img/cableado-estructurado.jpg",
       alt: "Servicio 3"
+    },
+    {
+      src: process.env.PUBLIC_URL + "/img/proyecto redes LAN.png",
+      alt: "Servicio 4"
     }
   ];
 
@@ -48,7 +46,7 @@ function Home() {
       <div>
         <h1 >Soluciones Tecnológicas a Tu Medida</h1>
       </div>          
-      <h2 className="text-center pt-5" >Nuestros Servicios</h2>
+      <h2 className="text-center pt-5 pb-5" >Nuestros Servicios</h2>
 
       <div className="mb-5">
         <AnimatePresence mode="wait">
@@ -79,6 +77,32 @@ function Home() {
                     </p>
                   </div>
                 )}
+                {imagenActual === 1 && (
+                  <div style={{ padding: '20px', borderRadius: '10px' }}>
+                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+                        Asesoría, instalación, mejoras, mantención en sistemas de seguridad CCTV.
+                        Ayudaremos a que se sientan seguros en su ambiente.
+                        siempre nos adaptaremos a sus necesidades                      
+                        <br />
+                      <br />
+                        
+                    </p>
+                  </div>
+                )}
+                {imagenActual === 2 && (
+                  <div style={{ padding: '20px', borderRadius: '10px' }}>
+                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+                      Entendemos lo importante de una red de datos.
+                      por eso nos esmeramos por ofrecer un servicio profesional en proyectos de instalación y mantención para;  
+                       colegios, oficinas, pequeñas y medianas empresas, etc.
+                      <br />
+                      <br />
+                        
+                    </p>
+                  </div>
+                )}
+
+
               </Col>
             </Row>
           </motion.div>
