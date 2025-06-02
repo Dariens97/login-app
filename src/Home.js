@@ -45,7 +45,10 @@ function Home() {
 
   return (
     <div className="container mt-5 text-center" >
-      <h2 className="text-center">Nuestros Servicios</h2>
+      <div>
+        <h1 >Soluciones Tecnológicas a Tu Medida</h1>
+      </div>          
+      <h2 className="text-center pt-5" >Nuestros Servicios</h2>
 
       <div className="mb-5">
         <AnimatePresence mode="wait">
@@ -109,6 +112,7 @@ function Home() {
                 <h4>Networking</h4>
                 <p className="fuente-personalizada">Proyectos de redes LAN</p>
                 <p className="fuente-personalizada">Soluciones Wifi y AP</p>
+                <p className="fuente-personalizada">Cableado estructurado</p>
                 <div className="mt-auto text-center">
                   <button className="btn btn-primary" onClick={() => setDetalleActivo('networking')}>
                     Ver más
