@@ -13,7 +13,7 @@ const AboutUs = () => {
         <Row className="align-items-center mb-5">
           <Col md={6}>
             <img
-              src={`${process.env.PUBLIC_URL}/img/arbol 1.jpg`}
+              src={`${process.env.PUBLIC_URL}/img/edificio las condes.png`}
               alt="Equipo de NET-CE"
               className="img-fluid rounded shadow"
             />

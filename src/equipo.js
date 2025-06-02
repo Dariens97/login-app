@@ -52,7 +52,7 @@ const equipo = [
   {
     nombre: 'Claudio Caffi A.',
     cargo: 'Gerente de Proyectos',
-    imagen: '/img/claudio caffi.jpg'
+    imagen: process.env.PUBLIC_URL + '/img/Socio-1-editado.jpg'
   },
   {
     nombre: 'Gerardo Machuca',
