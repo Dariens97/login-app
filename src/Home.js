@@ -70,21 +70,26 @@ function Home() {
                 {imagenActual === 0 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
                     <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+                      <h1>Regalemos un arbol nativo</h1>
+                      <br />
+                      
                       Se decidió ayudar a combatir el cambio climático y sus efectos, producto en gran parte por nuestras acciones.
                       <br />
                       <br />
-                      Por cada proyecto aprobado se donará un árbol y se le entregará una tarjeta al cliente por su aporte al programa.
+                      Por cada proyecto aprobado se donará un árbol y se le entregará una tarjeta al cliente por su aporte al programa de la ONG "Reforestemos".
                     </p>
                   </div>
                 )}
                 {imagenActual === 1 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
                     <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+                       <h1>Sistema de Cámaras de seguridad y sensores</h1>
+                      <br />
                         Asesoría, instalación, mejoras, mantención en sistemas de seguridad CCTV.
                         Ayudaremos a que se sientan seguros en su ambiente.
-                        siempre nos adaptaremos a sus necesidades                      
                         <br />
-                      <br />
+                        Diseñamos soluciones a su medida con equipos de alta calidad.                   
+                        
                         
                     </p>
                   </div>
@@ -92,12 +97,23 @@ function Home() {
                 {imagenActual === 2 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
                     <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+                       <h1>Cableado Estructurado</h1>
+                      <br />
                       Entendemos lo importante de una red de datos.
-                      por eso nos esmeramos por ofrecer un servicio profesional en proyectos de instalación y mantención para;  
-                       colegios, oficinas, pequeñas y medianas empresas, etc.
                       <br />
+                      por eso cumplimos la norma ANSI/TIA/EIA-568 y nos esmeramos por ofrecer un servicio profesional en proyectos
+                      de instalacion, mantención y optimización para; 
                       <br />
-                        
+                       colegios, oficinas, pequeñas y medianas empresas, etc.  
+                    </p>
+                  </div>
+                )}
+                {imagenActual === 3 && (
+                  <div style={{ padding: '20px', borderRadius: '10px' }}>
+                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+                       <h1>Soluciones WIFI y AP</h1>
+                      <br />
+                      Maximice su conectividad y rendimiento dentro de su organización con una red WIFI robusta, segura y eficiente
                     </p>
                   </div>
                 )}

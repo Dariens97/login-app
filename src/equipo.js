@@ -57,7 +57,7 @@ const equipo = [
   {
     nombre: 'Gerardo Machuca',
     cargo: 'Asesor En Infraestructura',
-    imagen: process.env.PUBLIC_URL + '/img/gerardo machuca.jpg'
+    imagen: process.env.PUBLIC_URL + '/img/Gerardo Machuca.jpg'
   }
 ];
 
