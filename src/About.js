@@ -30,7 +30,7 @@ const AboutUs = () => {
 
         <Row className="text-center">
           <Col md={4}>
-            <Card className="bg-transparent shadow border-0">
+            <Card className="bg-transparent shadow border-0"style={{minHeight:'325px'}}>
               <Card.Body>
                 <h4>🔐 Nuestra Misión</h4>
                 <p>
@@ -42,7 +42,7 @@ const AboutUs = () => {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="bg-transparent shadow border-0">
+            <Card className="bg-transparent shadow border-0" style={{minHeight:'325px'}}>
               <Card.Body>
                 <h4>🚀 Visión</h4>
                 <p>
@@ -54,7 +54,7 @@ const AboutUs = () => {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="bg-transparent shadow border-0">
+            <Card className="bg-transparent shadow border-0"style={{minHeight:'325px'}}>
               <Card.Body>
                 <h4>💡 Valores</h4>
                 <p>
