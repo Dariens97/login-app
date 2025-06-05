@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import {  Row, Col } from 'react-bootstrap';
 
 function Home() {
   const [detalleActivo, setDetalleActivo] = useState(null);
@@ -43,10 +43,8 @@ function Home() {
 
   return (
     <div className="container mt-5 text-center" >
-      <div>
-        <h1 >Soluciones Tecnológicas a Tu Medida</h1>
-      </div>          
-      <h2 className="text-center pt-5 pb-5" >Nuestros Servicios</h2>
+                
+      <h2 className="text-center pt-0.1 pb-5" >Nuestros Servicios</h2>
 
       <div className="mb-5">
         <AnimatePresence mode="wait">

@@ -5,7 +5,7 @@ import NuestroEquipo from './equipo';
 const AboutUs = () => {
   return (
     <div style={{
-      padding: '80px 0'
+      padding: '15px 0'
     }}>
       <Container>
         <h2 className="text-center mb-5" style={{ fontWeight: 'bold' }}>Nosotros</h2>
@@ -21,8 +21,10 @@ const AboutUs = () => {
           </Col>
           <Col md={8}>
             <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
-              En <strong>NET-CE</strong>, somos una empresa enfocada en brindar soluciones integrales en seguridad electrónica.
-              Nuestro compromiso es entregar tecnología de vanguardia con un enfoque profesional, serio y cercano a nuestros clientes.
+              En <strong>NET-CE</strong>, Somos una empresa enfocada en brindar soluciones integrales en seguridad CCTV y redes LAN. 
+              Nuestro compromiso es entregar tecnología de vanguardia con un enfoque de innovación en función de las personas, 
+              para ello estaremos constantemente cuestionando; nuestro modelo de negocio, tecnologías, 
+              la capacidad adaptativa y nuestro nivel de empatía hacia los clientes.
               <br /><br />
               Creemos en la confianza como base de toda relación, y por eso trabajamos con excelencia, responsabilidad y transparencia. 
             </p>
