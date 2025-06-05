@@ -24,7 +24,7 @@ const AboutUs = () => {
               En <strong>NET-CE</strong>, somos una empresa enfocada en brindar soluciones integrales en seguridad electrónica.
               Nuestro compromiso es entregar tecnología de vanguardia con un enfoque profesional, serio y cercano a nuestros clientes.
               <br /><br />
-              Creemos en la confianza como base de toda relación, y por eso trabajamos con excelencia, responsabilidad y transparencia.
+              Creemos en la confianza como base de toda relación, y por eso trabajamos con excelencia, responsabilidad y transparencia. 
             </p>
           </Col>
         </Row>
