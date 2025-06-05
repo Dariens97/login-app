@@ -10,15 +10,16 @@ const AboutUs = () => {
       <Container>
         <h2 className="text-center mb-5" style={{ fontWeight: 'bold' }}>Nosotros</h2>
 
-        <Row className="align-items-center mb-5">
-          <Col md={6}>
+        <Row className="align-items-center mb-5 " >
+          <Col md={4}>
             <img
               src={`${process.env.PUBLIC_URL}/img/edificio las condes.png`}
               alt="Equipo de NET-CE"
               className="img-fluid rounded shadow"
+              style={{maxHeight:'400px'}}
             />
           </Col>
-          <Col md={6}>
+          <Col md={8}>
             <p style={{ fontSize: '1.2rem', lineHeight: '1.6' }}>
               En <strong>NET-CE</strong>, somos una empresa enfocada en brindar soluciones integrales en seguridad electrónica.
               Nuestro compromiso es entregar tecnología de vanguardia con un enfoque profesional, serio y cercano a nuestros clientes.
