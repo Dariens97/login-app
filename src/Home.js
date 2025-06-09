@@ -13,7 +13,7 @@ function Home() {
     },
 
     {
-      src: process.env.PUBLIC_URL + "/img/imagen seguridad.png",
+      src: process.env.PUBLIC_URL + "/img/cctv.png",
       alt: "Servicio 2"
 
     },
@@ -26,6 +26,7 @@ function Home() {
       alt: "Servicio 4"
     }
   ];
+  
 
   useEffect(() => {
     const intervalo = setInterval(() => {
@@ -43,8 +44,101 @@ function Home() {
 
   return (
     <div className="container mt-5 text-center" >
-                
-      <h2 className="text-center pt-0.1 pb-5" >Nuestros Servicios</h2>
+     {/*<div class="row align-items-start">
+        <div class="column col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="struct ">
+          <div class="specialStrucComp">
+            <div class=" struct-multicard struct-slider" struct-slider="">
+              <div class="struct-multicard__col struct-multicard__col_big struct-slide ">
+                <div class="card_hover scroll_snap_center ">
+                  <h2 class="card_hover_title card_hover_title_dark" style={{fontsize:'1.6rem', lineheight: '1.6rem'}}>
+                    <p>
+                      <strong>Protegemos
+                      </strong>
+                      &nbsp;tu hogar
+                      <br>
+                      </br>
+                      con la mejor tecnología
+                    </p>
+                  </h2>
+                  <h2 class="card_hover_title_hover card_hover_title_hover_dark" style={{fontsize: '1.6rem',lineheight: '1.6rem'}}>
+                    <p>
+                      <strong>
+                        Protegemos
+                      </strong>
+                      &nbsp;tu hogar
+                      <br>
+                      </br>
+                      con la mejor tecnología
+                    </p>
+                  </h2>
+                  <div class="card_hover_text card_hover_text_dark" >
+                    <ul>
+                      <li>Detecta intrusos antes de que ingresen a tu hogar</li>
+                      <li>Alarma siempre activa, incluso si intentan bloquearla</li>
+                      <li>Batería de respaldo y panel oculto</li>
+                    </ul>
+                    <p>&nbsp;
+                    </p>
+                  </div>
+                  <div class="card_hover_link">
+                    <a taget="_blank" rel="noopener noreferrer" href="https://www.prosegur.cl/conoce-nuestra-alarma" class="card_hover_link_dark" style={{}}>
+                      Conoce más sobre nuestra alarma 
+                      <i class="fa fa-angle-right" aria-hidden="true">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="struct-multicard__col struct-slide">
+                <div class="card_hover scroll_snap_center " style={{borderradius: '8px'}}>
+                  <div class="card_hover_overlay card_hover_overlay_white card_hover_overlay_opacity_80" style={{borderradius: '8px'}}>
+                  </div>
+                  <h2 class="card_hover_title card_hover_title_white" style={{fontsize: '1.6rem',lineheight: '1.6rem'}}>
+                    <p>
+                      <strong>Te protegemos&nbsp;
+                      </strong>
+                      en
+                      <br>
+                      </br>
+                      todo momento
+                    </p>
+                  </h2>
+                  <h2 class="card_hover_title_hover card_hover_title_hover_dark" style={{fontsize: '1.6rem', lineheight: '1.6rem'}}>
+                    <p>
+                      <strong>Te protegemos&nbsp;
+                      </strong>
+                      en
+                      <br>
+                      </br>
+                      todo momento
+                    </p>
+                  </h2>
+                  <div class="card_hover_text card_hover_text_dark" >
+                    <p>
+                      <strong>Estamos conectados 24/7,&nbsp;
+                      </strong>ante un evento nuestra Central Receptora actuará en pocos segundos 
+                      <strong>llamando a la policía.&nbsp;
+                      </strong>
+                    </p>
+                    <p>&nbsp;
+                    </p>
+                  </div>
+                  <div class="card_hover_link" >
+                    <button className="btn btn-link p-0 text-decoration-none">
+                      Conoce nuestra CRA 
+                      <i className="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>*/}               
+      <h2 className="text-center pt-1 pb-5">Nuestros Servicios</h2>
 
       <div className="mb-5">
         <AnimatePresence mode="wait">
@@ -61,14 +155,14 @@ function Home() {
                   src={imagenes[imagenActual].src}
                   alt={imagenes[imagenActual].alt}
                   className="img-fluid rounded shadow"
-                  style={{ maxHeight: '400px', width: '100%', objectFit: 'cover' }}
+                  style={{ maxHeight: '250px', width: '75%', objectFit: 'cover' }}
                 />
               </Col>
               <Col md={6}>
                 {imagenActual === 0 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
-                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
-                      <h1>Regalemos un arbol nativo</h1>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                      <h2>Regalemos un arbol nativo</h2>
                       <br />
                       
                       Se decidió ayudar a combatir el cambio climático y sus efectos, producto en gran parte por nuestras acciones.
@@ -80,8 +174,8 @@ function Home() {
                 )}
                 {imagenActual === 1 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
-                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
-                       <h1>Sistema de Cámaras de seguridad y sensores</h1>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                       <h2>Sistema CCTV y sensores</h2>
                       <br />
                         Asesoría, instalación, mejoras, mantención en sistemas de seguridad CCTV.
                         Ayudaremos a que se sientan seguros en su ambiente.
@@ -94,8 +188,8 @@ function Home() {
                 )}
                 {imagenActual === 2 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
-                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
-                       <h1>Cableado Estructurado</h1>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                       <h2>Cableado Estructurado</h2>
                       <br />
                       Entendemos lo importante de una red de datos.
                       <br />
@@ -108,8 +202,8 @@ function Home() {
                 )}
                 {imagenActual === 3 && (
                   <div style={{ padding: '20px', borderRadius: '10px' }}>
-                    <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
-                       <h1>Soluciones WIFI y AP</h1>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                       <h2>Soluciones WIFI y AP</h2>
                       <br />
                       Maximice su conectividad y rendimiento dentro de su organización con una red WIFI robusta, segura y eficiente
                     </p>
@@ -185,15 +279,15 @@ function Home() {
                   </div>
                   <div className="col-md-3 bg-light p-4 rounded shadow">
                     <h5>Asistencia</h5>
-                    <p className="fuente-personalizada" style={{ fontSize: '0.8em' }}>Atención oportuna para reducir el impacto en la seguridad y resolver problemas técnicos de Nivel 1.</p>
+                    <p className="fuente-personalizada" >Atención oportuna para reducir el impacto en la seguridad y resolver problemas técnicos de Nivel 1.</p>
                   </div>
                   <div className="col-md-3 bg-light p-4 rounded shadow">
                     <h5>Servicio Preventivo</h5>
-                    <p className="fuente-personalizada" style={{ fontSize: '0.8em' }}>Anticipación a fallas y aseguramiento de la durabilidad del sistema de seguridad.</p>
+                    <p className="fuente-personalizada" >Anticipación a fallas y aseguramiento de la durabilidad del sistema de seguridad.</p>
                   </div>
                   <div className="col-md-3 bg-light p-4 rounded shadow">
                     <h5>Servicio por Eventos</h5>
-                    <p className="fuente-personalizada" style={{ fontSize: '0.8em' }}>Restauración de fallas inesperadas a nivel de hardware.</p>
+                    <p className="fuente-personalizada" >Restauración de fallas inesperadas a nivel de hardware.</p>
                   </div>
                 </div>
               )}
@@ -232,30 +326,41 @@ function Home() {
                 </div>
               )}
               {detalleActivo === 'camaras' && (
-                <div className="container mt-5  row text-center justify-content-between ">
+                <div className="container mt-5 text-center">
                   <h4>Cámaras y Alarmas</h4>
-                  
-                    <h5>Cableado Estructurado</h5>
-                    <div className="col-md-2 bg-light p-4 rounded shadow">
-                      <h5>Inside</h5>
-                      <p className="fuente-personalizada"> Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.</p>
-                    </div>
-                    <div className="col-md-3 bg-light p-4 rounded shadow">
-                      <h5>Perimetral</h5>
-                      <p className="fuente-personalizada"> Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.</p>
-                    </div>
-                    <div className="col-md-3 bg-light p-4 rounded shadow">
-                      <h5>Alarmas Comunitarias</h5>
-                      <p className="fuente-personalizada"> Proteja a su familia y comunidad con nuestras soluciones colectivas. Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.</p>
-                    </div>
-                    <div className="col-md-3 bg-light p-4 rounded shadow">
-                      <h5>Mantención de Equipos</h5>
-                      <p className="fuente-personalizada"> Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.</p>
-                    </div>
 
-                  
+                  <div className="row justify-content-center mt-4">
+                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                      <h5>Inside</h5>
+                      <p className="fuente-personalizada">
+                        Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.
+                      </p>
+                    </div>
+                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                      <h5>Perimetral</h5>
+                      <p className="fuente-personalizada">
+                        Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="row justify-content-center mt-3">
+                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                      <h5>Alarmas Comunitarias</h5>
+                      <p className="fuente-personalizada">
+                        Proteja a su familia y comunidad con nuestras soluciones colectivas. Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.
+                      </p>
+                    </div>
+                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                      <h5>Mantención de Equipos</h5>
+                      <p className="fuente-personalizada">
+                        Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               )}
+
 
               <motion.button
                 className="btn btn-secondary mt-4"
@@ -275,9 +380,14 @@ function Home() {
         </p>
       </div>
 
-      <div style={{ height: '100px' }}></div>
+     
     </div>
+    
+
+    
   );
+    
+
 }
 
 export default Home;

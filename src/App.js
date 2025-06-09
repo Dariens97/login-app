@@ -7,6 +7,7 @@ import Home from './Home';
 import Footer from './Footer';
 import Contact from "./Contact";
 import About from "./About";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Navigation() {
   return (
