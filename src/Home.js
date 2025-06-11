@@ -41,104 +41,12 @@ function Home() {
     animate: { opacity: 1 },
     exit: { opacity: 0 }
   };
+return (
+  <div style={{ transform: 'scale(0.75)', transformOrigin: 'top center' }}>
+    <div className="container mt-5 text-center">
 
-  return (
-    <div className="container mt-5 text-center" >
-     {/*<div class="row align-items-start">
-        <div class="column col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <div class="struct ">
-          <div class="specialStrucComp">
-            <div class=" struct-multicard struct-slider" struct-slider="">
-              <div class="struct-multicard__col struct-multicard__col_big struct-slide ">
-                <div class="card_hover scroll_snap_center ">
-                  <h2 class="card_hover_title card_hover_title_dark" style={{fontsize:'1.6rem', lineheight: '1.6rem'}}>
-                    <p>
-                      <strong>Protegemos
-                      </strong>
-                      &nbsp;tu hogar
-                      <br>
-                      </br>
-                      con la mejor tecnología
-                    </p>
-                  </h2>
-                  <h2 class="card_hover_title_hover card_hover_title_hover_dark" style={{fontsize: '1.6rem',lineheight: '1.6rem'}}>
-                    <p>
-                      <strong>
-                        Protegemos
-                      </strong>
-                      &nbsp;tu hogar
-                      <br>
-                      </br>
-                      con la mejor tecnología
-                    </p>
-                  </h2>
-                  <div class="card_hover_text card_hover_text_dark" >
-                    <ul>
-                      <li>Detecta intrusos antes de que ingresen a tu hogar</li>
-                      <li>Alarma siempre activa, incluso si intentan bloquearla</li>
-                      <li>Batería de respaldo y panel oculto</li>
-                    </ul>
-                    <p>&nbsp;
-                    </p>
-                  </div>
-                  <div class="card_hover_link">
-                    <a taget="_blank" rel="noopener noreferrer" href="https://www.prosegur.cl/conoce-nuestra-alarma" class="card_hover_link_dark" style={{}}>
-                      Conoce más sobre nuestra alarma 
-                      <i class="fa fa-angle-right" aria-hidden="true">
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="struct-multicard__col struct-slide">
-                <div class="card_hover scroll_snap_center " style={{borderradius: '8px'}}>
-                  <div class="card_hover_overlay card_hover_overlay_white card_hover_overlay_opacity_80" style={{borderradius: '8px'}}>
-                  </div>
-                  <h2 class="card_hover_title card_hover_title_white" style={{fontsize: '1.6rem',lineheight: '1.6rem'}}>
-                    <p>
-                      <strong>Te protegemos&nbsp;
-                      </strong>
-                      en
-                      <br>
-                      </br>
-                      todo momento
-                    </p>
-                  </h2>
-                  <h2 class="card_hover_title_hover card_hover_title_hover_dark" style={{fontsize: '1.6rem', lineheight: '1.6rem'}}>
-                    <p>
-                      <strong>Te protegemos&nbsp;
-                      </strong>
-                      en
-                      <br>
-                      </br>
-                      todo momento
-                    </p>
-                  </h2>
-                  <div class="card_hover_text card_hover_text_dark" >
-                    <p>
-                      <strong>Estamos conectados 24/7,&nbsp;
-                      </strong>ante un evento nuestra Central Receptora actuará en pocos segundos 
-                      <strong>llamando a la policía.&nbsp;
-                      </strong>
-                    </p>
-                    <p>&nbsp;
-                    </p>
-                  </div>
-                  <div class="card_hover_link" >
-                    <button className="btn btn-link p-0 text-decoration-none">
-                      Conoce nuestra CRA 
-                      <i className="fa fa-angle-right" aria-hidden="true"></i>
-                    </button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>*/}               
-      <h2 className="text-center pt-1 pb-5">Nuestros Servicios</h2>
+                   
+      <h3 className="text-center pt-1 pb-5">Nuestros Servicios</h3>
 
       <div className="mb-5">
         <AnimatePresence mode="wait">
@@ -381,8 +289,10 @@ function Home() {
       </div>
 
      
-    </div>
     
+        </div> 
+  </div>   
+
 
     
   );
