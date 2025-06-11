@@ -1,7 +1,7 @@
 import React from "react";
 import "./colores.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './Logo-NETCE-png.png';
+import logo from './logo 720x470.png';
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from './Home';
 import Footer from './Footer';
@@ -29,7 +29,7 @@ function Navigation() {
         <Link className="navbar-brand d-flex align-items-center" to="/">
           
           <div className="d-none d-md-block text-start"style={{float:"left"}}>
-            <img src={logo} alt="Logo" width="75" className="me-2" />
+            <img src={logo} alt="Logo" width="100" className="me-2" />
             
 
           </div>
