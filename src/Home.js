@@ -13,7 +13,7 @@ function Home() {
     },
 
     {
-      src: process.env.PUBLIC_URL + "/img/cctv.png",
+      src: process.env.PUBLIC_URL + "/img/cctv.jpg",
       alt: "Servicio 2"
 
     },
@@ -22,8 +22,12 @@ function Home() {
       alt: "Servicio 3"
     },
     {
-      src: process.env.PUBLIC_URL + "/img/proyecto redes LAN.png",
+      src: process.env.PUBLIC_URL + "/img/proyecto redes LAN.jpg",
       alt: "Servicio 4"
+    },
+    {
+      src: process.env.PUBLIC_URL + "/img/redes lan.jpg",
+      alt: "Servicio 5"
     }
   ];
   
@@ -63,7 +67,7 @@ return (
                   src={imagenes[imagenActual].src}
                   alt={imagenes[imagenActual].alt}
                   className="img-fluid rounded shadow"
-                  style={{ maxHeight: '250px', width: '75%', objectFit: 'cover' }}
+                  style={{ maxHeight: '500px', maxWidth: '250', objectFit: 'cover' }}
                 />
               </Col>
               <Col md={6}>
@@ -73,10 +77,10 @@ return (
                       <h2>Regalemos un arbol nativo</h2>
                       <br />
                       
-                      Se decidió ayudar a combatir el cambio climático y sus efectos, producto en gran parte por nuestras acciones.
+                     Juntémonos para combatir el cambio climático y sus efectos producto en gran parte por nuestras acciones.
                       <br />
                       <br />
-                      Por cada proyecto aprobado se donará un árbol y se le entregará una tarjeta al cliente por su aporte al programa de la ONG "Reforestemos".
+                      Por cada proyecto aprobado en conjunto donaremos un árbol y se entregará una tarjeta al cliente como recuerdo por su aporte al programa Reforestemos.
                     </p>
                   </div>
                 )}
@@ -86,9 +90,11 @@ return (
                        <h2>Sistema CCTV y sensores</h2>
                       <br />
                         Asesoría, instalación, mejoras, mantención en sistemas de seguridad CCTV.
-                        Ayudaremos a que se sientan seguros en su ambiente.
+                        Ayudamos a que se sientan seguro y tranquilo en su ambiente.
                         <br />
-                        Diseñamos soluciones a su medida con equipos de alta calidad.                   
+                        <br />
+                        Asesoramos y diseñamos soluciones a tu medida con equipos de alta calidad.
+                                           
                         
                         
                     </p>
@@ -113,7 +119,19 @@ return (
                     <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
                        <h2>Soluciones WIFI y AP</h2>
                       <br />
-                      Maximice su conectividad y rendimiento dentro de su organización con una red WIFI robusta, segura y eficiente
+                      Mantengamos a todos conectados y en movimiento. 
+                      <br />
+                      Maximiza tu conectividad y rendimiento dentro de tu organización con una red Wifi robusta, eficiente y segura.
+                    </p>
+                  </div>
+                )}
+                {imagenActual === 4 && (
+                  <div style={{ padding: '20px', borderRadius: '10px' }}>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>
+                       <h2>Redes LAN</h2>
+                      <br />
+                      Si quieres estar a un click de distancia, asegura tu red permitiendo una interconexión segura y robusta entre tus recursos y las personas. 
+                      
                     </p>
                   </div>
                 )}
@@ -282,11 +300,7 @@ return (
         </AnimatePresence>
       </div>
 
-      <div style={{ paddingTop: '50px' }}>
-        <p className="fuente-personalizada" style={{ fontSize: '0.8em' }}>
-          Asumimos nuestra responsabilidad social y ayudamos a combatir el cambio climático y sus efectos. Por ese motivo, se plantará un árbol nativo por medio de la ONG REFORESTEMOS por cada proyecto aprobado.
-        </p>
-      </div>
+      
 
      
     

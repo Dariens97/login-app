@@ -26,12 +26,21 @@ function Navigation() {
       */}
       
         {/* Logo e información */}
-        <Link className="navbar-brand d-flex align-items-center" to="/">
+        <Link className="navbar-brand d-flex align-items-center w-100 justify-content-between" to="/">
           
-          <div className="d-none d-md-block text-start"style={{float:"left"}}>
+          <div className="d-none d-md-block ms-5">
             <img src={logo} alt="Logo" width="100" className="me-2" />
             
 
+          </div>
+          <div className="d-none d-md-block mx-auto " style={{ maxWidth: "800px", fontSize: "0.9rem" }}>
+            <h5 style={{fontSize: "1rem"}}>
+              Tenemos como idea pragmática el concepto “innovación” en función de las personas, 
+              <br></br>
+              estamos constantemente cuestionando nuestro; modelo de negocio, tecnologías, 
+              <br></br>
+              capacidad adaptativa y nivel de empatía hacia nuestro entorno
+            </h5>
           </div>
           
         </Link>
@@ -54,13 +63,13 @@ function Navigation() {
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav ms-auto text-center">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Inicio</Link>
+              <Link className="nav-link fs-5" to="/">Inicio</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">Nosotros</Link>
+              <Link className="nav-link fs-5" to="/about">Nosotros</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contacto</Link>
+              <Link className="nav-link fs-5" to="/contact">Contacto</Link>
             </li>
           </ul>
         </div>
