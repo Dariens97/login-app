@@ -259,13 +259,17 @@ return (
                     <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
                       <h5>Inside</h5>
                       <p className="fuente-personalizada">
-                        Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.
+                        Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. 
+                        <br></br>
+                        Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.
                       </p>
                     </div>
                     <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
                       <h5>Perimetral</h5>
                       <p className="fuente-personalizada">
-                        Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.
+                        Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. 
+                        <br></br>
+                        Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.
                       </p>
                     </div>
                   </div>
@@ -274,7 +278,12 @@ return (
                     <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
                       <h5>Alarmas Comunitarias</h5>
                       <p className="fuente-personalizada">
-                        Proteja a su familia y comunidad con nuestras soluciones colectivas. Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.
+                        
+                        Ofrecemos este tipo de alarmas para asegurar una protección coordinada, donde todos pueden monitorear en tiempo real.
+                        <br></br>
+                        <br></br>
+                        Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.
+                        
                       </p>
                     </div>
                     <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
