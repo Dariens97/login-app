@@ -30,12 +30,23 @@ function Home() {
       alt: "Servicio 5"
     }
   ];
+
+  useEffect(() => {
+      imagenes.forEach((img) => {
+        const preloadImg = new Image();
+        preloadImg.src = img.src;
+      });
+    }, []);
+
   
+
+    
+
 
   useEffect(() => {
     const intervalo = setInterval(() => {
       setImagenActual((prev) => (prev + 1) % imagenes.length);
-    }, 8000); // cambia cada 3 segundos
+    }, 10000); // cambia cada 10 segundos
 
     return () => clearInterval(intervalo);
   }, [imagenes.length]);
@@ -46,13 +57,15 @@ function Home() {
     exit: { opacity: 0 }
   };
 return (
+  /* div contenedor*/
   <div style={{ transform: 'scale(0.75)', transformOrigin: 'top center' }}>
-    <div className="container mt-5 text-center">
+    <div className="container mt-5 text-center ">
 
                    
       <h3 className="text-center pt-1 pb-5">Nuestros Servicios</h3>
-
-      <div className="mb-5">
+      
+      {/*div contenedor de imagenes con texto */}
+      <div className="mb-5 " style={{ minHeight: '300px' }}>
         <AnimatePresence mode="wait">
           <motion.div
             key={imagenActual}
@@ -60,14 +73,15 @@ return (
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 2 }}
+            
           >
             <Row className="align-items-center">
               <Col md={6} className="text-center mb-4 mb-md-0">
                 <img
                   src={imagenes[imagenActual].src}
                   alt={imagenes[imagenActual].alt}
-                  className="img-fluid rounded shadow"
-                  style={{ maxHeight: '500px', maxWidth: '250', objectFit: 'cover' }}
+                  className="img-fluid rounded "
+                  style={{ maxHeight: '400px', maxWidth: '200', objectFit: 'cover' }}
                 />
               </Col>
               <Col md={6}>
@@ -145,7 +159,7 @@ return (
 
 
       {/* BLOQUE DE SERVICIOS */}
-      <div className="container mt-5">
+      <div className="container mt-5 pt-1">
         <AnimatePresence mode="wait">
           {!detalleActivo ? (
             <motion.div
@@ -199,7 +213,7 @@ return (
             >
               {/* Sección de detalles dinámicos */}
               {detalleActivo === 'incidencias' && (
-                <div className="container mt-5 row text-center justify-content-between">
+                <div className="container mt-1 row text-center justify-content-between">
                   <div style={{ paddingBottom: '50px' }}>
                     <h4>Gestión de Incidencias</h4>
                   </div>
@@ -219,7 +233,7 @@ return (
               )}
 
               {detalleActivo === 'networking' && (
-                <div className="container mt-5  row text-center justify-content-between ">
+                <div className="container mt-1  row text-center justify-content-between ">
                   <h4>Networking</h4>
                   <div className="col-md-3 bg-light p-4 rounded shadow">
                     <h5>Diseño de Redes LAN</h5>
@@ -252,11 +266,11 @@ return (
                 </div>
               )}
               {detalleActivo === 'camaras' && (
-                <div className="container mt-5 text-center">
+                <div className="container mt-1 text-center">
                   <h4>Cámaras y Alarmas</h4>
-
+                  
                   <div className="row justify-content-center mt-4">
-                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow" >
                       <h5>Inside</h5>
                       <p className="fuente-personalizada">
                         Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. 
@@ -308,12 +322,16 @@ return (
           )}
         </AnimatePresence>
       </div>
-
       
+      {/* BLOQUE DE productos */}
+      <div className="container mt-5 pt-1">
+        
 
-     
-    
-        </div> 
+
+      </div>
+
+
+    </div> 
   </div>   
 
 

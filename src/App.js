@@ -16,6 +16,7 @@ function Navigation() {
         {/* Logo alineado a la izquierda */}
         <Link className="navbar-brand d-flex align-items-center" to="/" style={{ marginLeft: "20rem" }}>
           <img src={logo} alt="Logo" width="100" className="me-2" />
+          {/*se verificará para sacar o dejar */}
           <small className="gris mb-0">Soluciones <br></br>Tecnológicas</small>
         </Link>
 
