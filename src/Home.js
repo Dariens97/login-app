@@ -211,7 +211,7 @@ return (
               {...animaciones}
               className="row text-center justify-content-center"
             >
-              {/* Sección de detalles dinámicos */}
+              {/* Sección de detalles dinámicos 
               {detalleActivo === 'incidencias' && (
                 <div className="container mt-1 row text-center justify-content-between">
                   <div style={{ paddingBottom: '50px' }}>
@@ -230,83 +230,267 @@ return (
                     <p className="fuente-personalizada" >Restauración de fallas inesperadas a nivel de hardware.</p>
                   </div>
                 </div>
-              )}
+              )}*/}
+              {detalleActivo === 'incidencias' && (
+                <div className="container mt-5 text-center">
+                  <h4>Gestión de Incidencias</h4>
+                  <div className="row mt-4">
 
-              {detalleActivo === 'networking' && (
-                <div className="container mt-1  row text-center justify-content-between ">
-                  <h4>Networking</h4>
-                  <div className="col-md-3 bg-light p-4 rounded shadow">
-                    <h5>Diseño de Redes LAN</h5>
-                    <p className="fuente-personalizada"> Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable, adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando:
+                    {/* Tarjeta izquierda (grande) */}
+                    <div className="col-md-6 mb-4">
+                      <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                        
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/Asistencia.png"}
+                          alt="Asistencia"
+                          className="img-fluid"
+                          style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                        />
+                        <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                          <h5 className="mb-2">Asistencia</h5>
+                          <p>Atención oportuna para reducir el impacto en la seguridad y resolver problemas técnicos de Nivel 1.</p>
+                        </div>
+                      </div>
+                    </div>
 
-                        Servidores ISE
+                    {/* Columna derecha (2 tarjetas pequeñas) */}
+                    <div className="col-md-6 d-flex flex-column justify-content-between">
+                      <div className="card-hover bg-light rounded shadow mb-4 flex-fill">
+                        
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/servicio preventivo.png"}
+                          alt="Preventivo"
+                          className="img-fluid"
+                          style={{ height: "145px", width: "100%", objectFit: "cover" }}
+                        />
+                        <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                          <h5 className="pt-3">Servicio Preventivo</h5>
+                          <p>Anticipación a fallas y aseguramiento de la durabilidad del sistema de seguridad.</p>
+                        </div>
+                      </div>
 
-                        Plataforma Cisco Prime
-
-                        Configuración de Firewall y Appliance
-
-                        Políticas de calidad de servicio (QoS)
-
-                        Administración de redes LAN</p>
-                  </div>
-                  <div className="col-md-3 bg-light p-4 rounded shadow">
-                    <h5>Soluciones WiFi</h5>
-                    <p className="fuente-personalizada"> Ofrecemos una solución integral para su red inalámbrica, que incluye:
-
-                        Análisis de cobertura, dimensionamiento y detección de vulnerabilidades
-
-                        Configuración y administración de tecnología WLC mediante AP ligeros o redes con AP autónomos
-
-                        Implementación completa de redes WiFi</p>
-                  </div>
-                  <div className="col-md-3 bg-light p-4 rounded shadow">
-                    <h5>Cableado Estructurado</h5>
-                    <p className="fuente-personalizada"> Realizamos el levantamiento, diseño y proyección del cableado estructurado, además del mantenimiento preventivo y correctivo para asegurar un rendimiento óptimo del sistema.</p>
+                      <div className="card-hover bg-light rounded shadow flex-fill">
+                        
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/servicio por eventos.jpg"}
+                          alt="Eventos"
+                          className="img-fluid"
+                          style={{ height: "145px", width: "100%", objectFit: "cover" }}
+                        />
+                        <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                          <h5 className="pt-3">Servicio por Eventos</h5>
+                          <p>Restauración de fallas inesperadas a nivel de hardware.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
+
+
+              {detalleActivo === 'networking' && (
+                <div className="container mt-5 text-center">
+                  <h4>Networking</h4>
+                  <div className="row mt-4">
+
+                    {/*tarjeta izquierda */}
+                    <div className="col-md-6 mb-4">
+                      <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                        <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                          <img
+                            src={process.env.PUBLIC_URL + "/img/Asistencia.png"}
+                            alt="Asistencia"
+                            className="img-fluid"
+                            style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                          />
+                          <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <h5 className="mb-2">Diseño de Redes LAN</h5>
+                            <p>Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable, adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando:
+
+                            Servidores ISE
+
+                            Plataforma Cisco Prime
+
+                            Configuración de Firewall y Appliance
+
+                            Políticas de calidad de servicio (QoS)
+
+                            Administración de redes LAN</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    {/*tarjetas a la derecha */}
+                    <div className="col-md-6 d-flex flex-column justify-content-between">
+                      <div className="card-hover bg-light rounded shadow mb-4 flex-fill">
+                        
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/servicio preventivo.png"}
+                          alt="Preventivo"
+                          className="img-fluid"
+                          style={{ height: "145px", width: "100%", objectFit: "cover" }}
+                        />
+                        <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                          <h5 className="pt-3">Soluciones WiFi</h5>
+                          <p>Ofrecemos una solución integral para su red inalámbrica, que incluye:
+                            Análisis de cobertura, dimensionamiento y detección de vulnerabilidades
+                            Configuración y administración de tecnología WLC mediante AP ligeros o redes con AP autónomos
+                            Implementación completa de redes WiFi</p>
+                        </div>
+                      </div>
+
+                      <div className="card-hover bg-light rounded shadow flex-fill">
+                        
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/servicio por eventos.jpg"}
+                          alt="Eventos"
+                          className="img-fluid"
+                          style={{ height: "145px", width: "100%", objectFit: "cover" }}
+                        />
+                        <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                          <h5 className="pt-3">Cableado Estructurado</h5>
+                          <p>Realizamos el levantamiento, diseño y proyección del cableado estructurado, además del mantenimiento preventivo y correctivo para asegurar un rendimiento óptimo del sistema.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+
               {detalleActivo === 'camaras' && (
-                <div className="container mt-1 text-center">
+                <div className="container mt-5 text-center">
                   <h4>Cámaras y Alarmas</h4>
+                  <div className="row mt-4">
+                    
+                    {/*tarjeta izquierda */}
+
+                      <div className="col-md-6 mb-4">
+                        <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                          <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                            <img
+                              src={process.env.PUBLIC_URL + "/img/Asistencia.png"}
+                              alt="Asistencia"
+                              className="img-fluid"
+                              style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                            />
+                            <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                              <h5 className="mb-2">Inside</h5>
+                              <p>Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. 
+                              <br></br>
+                              Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {/*tarqueta grande 2 */}
+                      <div className="col-md-6 mb-4">
+                        <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                          <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                            <img
+                              src={process.env.PUBLIC_URL + "/img/Asistencia.png"}
+                              alt="Asistencia"
+                              className="img-fluid"
+                              style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                            />
+                            <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                              <h5 className="mb-2">Perimetral</h5>
+                              <p>
+                                Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. 
+                                <br></br>
+                                Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    {/*<div className="row justify-content-center mt-4">
+                      <div className="col-md-5 bg-light p-4 m-2 rounded shadow" >
+                        <h5>Inside</h5>
+                        <p className="fuente-personalizada">
+                          Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. 
+                          <br></br>
+                          Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.
+                        </p>
+                      </div>
+                      <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                        <h5>Perimetral</h5>
+                        <p className="fuente-personalizada">
+                          Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. 
+                          <br></br>
+                          Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.
+                        </p>
+                      </div>
+                    </div>
                   
-                  <div className="row justify-content-center mt-4">
-                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow" >
-                      <h5>Inside</h5>
-                      <p className="fuente-personalizada">
-                        Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. 
-                        <br></br>
-                        Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.
-                      </p>
-                    </div>
-                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
-                      <h5>Perimetral</h5>
-                      <p className="fuente-personalizada">
-                        Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. 
-                        <br></br>
-                        Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.
-                      </p>
-                    </div>
+                    <div className="row justify-content-center mt-3">
+                      <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                        <h5>Alarmas Comunitarias</h5>
+                        <p className="fuente-personalizada">
+                          
+                          Ofrecemos este tipo de alarmas para asegurar una protección coordinada, donde todos pueden monitorear en tiempo real.
+                          <br></br>
+                          <br></br>
+                          Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.
+                          
+                        </p>
+                      </div>
+                      <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
+                        <h5>Mantención de Equipos</h5>
+                        <p className="fuente-personalizada">
+                          Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.
+                        </p>
+                      </div>
+                    </div>*/}
                   </div>
 
-                  <div className="row justify-content-center mt-3">
-                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
-                      <h5>Alarmas Comunitarias</h5>
-                      <p className="fuente-personalizada">
-                        
-                        Ofrecemos este tipo de alarmas para asegurar una protección coordinada, donde todos pueden monitorear en tiempo real.
-                        <br></br>
-                        <br></br>
-                        Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.
-                        
-                      </p>
-                    </div>
-                    <div className="col-md-5 bg-light p-4 m-2 rounded shadow">
-                      <h5>Mantención de Equipos</h5>
-                      <p className="fuente-personalizada">
-                        Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.
-                      </p>
-                    </div>
+                  {/*tarjetas grandes parte de abajo */}
+                  <div className="row mt-4">
+
+                    {/*tarjeta izquierda 3 */}
+                       <div className="col-md-6 mb-4">
+                        <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                          <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                            <img
+                              src={process.env.PUBLIC_URL + "/img/Asistencia.png"}
+                              alt="Asistencia"
+                              className="img-fluid"
+                              style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                            />
+                            <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                              <h5 className="mb-2">Mantención de Equipos</h5>
+                              <p>Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    {/*tarjeta izquierda 4 */}
+                      <div className="col-md-6 mb-4">
+                        <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                          <div className="card-hover bg-light rounded shadow h-100 d-flex flex-column">
+                            <img
+                              src={process.env.PUBLIC_URL + "/img/Asistencia.png"}
+                              alt="Asistencia"
+                              className="img-fluid"
+                              style={{ height: "300px", width: "100%", objectFit: "cover" }}
+                            />
+                            <div className="overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                              <h5 className="mb-2">Alarmas Comunitarias</h5>
+                              <p>
+                                Ofrecemos este tipo de alarmas para asegurar una protección coordinada, donde todos pueden monitorear en tiempo real.
+                                <br></br>
+                                <br></br>
+                                Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </div>
+
                 </div>
               )}
 

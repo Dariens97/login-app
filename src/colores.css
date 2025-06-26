@@ -61,6 +61,65 @@
   margin-top: 14px;
 }
 
+.card-hover {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-hover img {
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover img {
+  transform: scale(1.05);
+}
+
+/*
+Sin gradiente
+
+.card-hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente 
+  color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}*/
+
+/*con gradiente*/
+.card-hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(200, 200, 200, 0.7), rgba(255, 255, 255, 0)); /* Gradiente */
+  color: #000; /* Texto oscuro para que se lea bien sobre fondo claro */
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alineado a la izquierda */
+  padding: 20px 30px;
+  text-align: left;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+
+
+.card-hover:hover .overlay {
+  opacity: 1;
+}
 
 
 
