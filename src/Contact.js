@@ -73,122 +73,122 @@ const ContactForm = () => {
 
   return (
 
-    
-   <div className="container mt-5" style={{ paddingBottom: '30px' }}>
-      <h2>Contáctanos</h2>
+     <div style={{ transform: 'scale(0.80)', transformOrigin: 'top center' }}>
+      <div className="container mt-5" style={{ paddingBottom: '30px' }}>
+        <h2>Contáctanos</h2>
 
-      {enviado && <Alert variant="success">¡Mensaje enviado con éxito!</Alert>}
-      {errorEnvio && <Alert variant="danger">{errorEnvio}</Alert>}
+        {enviado && <Alert variant="success">¡Mensaje enviado con éxito!</Alert>}
+        {errorEnvio && <Alert variant="danger">{errorEnvio}</Alert>}
 
-      <Form onSubmit={handleSubmit} noValidate>
-        
-        <div className="row">
-          <Form.Group className="col-md-6" controlId="formAsunto">
-            <Form.Label>Asunto</Form.Label>
-            <Form.Select
-              name="asunto"
-              value={form.asunto}
-              onChange={handleChange}
-              isInvalid={!!errores.asunto}
-            >
-              <option value="">-- Selecciona un asunto --</option>
-              <option value="Consulta General">Gestion de incidencias</option>
-              <option value="Soporte Técnico">Networking</option>
-              <option value="Cotización">Cámaras y Alarmas</option>
-            </Form.Select>
-            <Form.Control.Feedback type="invalid">
-              {errores.asunto}
-            </Form.Control.Feedback>
-          </Form.Group>
+        <Form onSubmit={handleSubmit} noValidate>
+          
+          <div className="row">
+            <Form.Group className="col-md-6" controlId="formAsunto">
+              <Form.Label>Asunto</Form.Label>
+              <Form.Select
+                name="asunto"
+                value={form.asunto}
+                onChange={handleChange}
+                isInvalid={!!errores.asunto}
+              >
+                <option value="">-- Selecciona un asunto --</option>
+                <option value="Consulta General">Gestion de incidencias</option>
+                <option value="Soporte Técnico">Networking</option>
+                <option value="Cotización">Cámaras y Alarmas</option>
+              </Form.Select>
+              <Form.Control.Feedback type="invalid">
+                {errores.asunto}
+              </Form.Control.Feedback>
+            </Form.Group>
 
-          <Form.Group className="col-md-6" controlId="formNombre">
-            <Form.Label>Razón Social</Form.Label>
-            <Form.Control
-              type="text"
-              name="razonSocial"
-              value={form.razonSocial}
-              onChange={handleChange}
-              isInvalid={!!errores.razonSocial} />
-            <Form.Control.Feedback type="invalid">
-              {errores.razonSocial}
-            </Form.Control.Feedback>
-          </Form.Group>
-        </div>
+            <Form.Group className="col-md-6" controlId="formNombre">
+              <Form.Label>Razón Social</Form.Label>
+              <Form.Control
+                type="text"
+                name="razonSocial"
+                value={form.razonSocial}
+                onChange={handleChange}
+                isInvalid={!!errores.razonSocial} />
+              <Form.Control.Feedback type="invalid">
+                {errores.razonSocial}
+              </Form.Control.Feedback>
+            </Form.Group>
+          </div>
 
-        <div className="row mt-3">
-          <Form.Group className="col-md-6" controlId="formNombre">
-            <Form.Label>Nombre</Form.Label>
-            <Form.Control
-              type="text"
-              name="nombre"
-              value={form.nombre}
-              onChange={handleChange}
-              isInvalid={!!errores.nombre} />
-            <Form.Control.Feedback type="invalid">
-              {errores.nombre}
-            </Form.Control.Feedback>
-          </Form.Group>
+          <div className="row mt-3">
+            <Form.Group className="col-md-6" controlId="formNombre">
+              <Form.Label>Nombre</Form.Label>
+              <Form.Control
+                type="text"
+                name="nombre"
+                value={form.nombre}
+                onChange={handleChange}
+                isInvalid={!!errores.nombre} />
+              <Form.Control.Feedback type="invalid">
+                {errores.nombre}
+              </Form.Control.Feedback>
+            </Form.Group>
 
-          <Form.Group className="col-md-6" controlId="formEmail">
-            <Form.Label>Correo Electrónico</Form.Label>
-            <Form.Control
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              isInvalid={!!errores.email} />
-            <Form.Control.Feedback type="invalid">
-              {errores.email}
-            </Form.Control.Feedback>
-          </Form.Group>
-        </div>
+            <Form.Group className="col-md-6" controlId="formEmail">
+              <Form.Label>Correo Electrónico</Form.Label>
+              <Form.Control
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                isInvalid={!!errores.email} />
+              <Form.Control.Feedback type="invalid">
+                {errores.email}
+              </Form.Control.Feedback>
+            </Form.Group>
+          </div>
 
-        <div className="row mt-3">
-          <Form.Group className="col-md-6" controlId="formTelefono">
-            <Form.Label>Teléfono</Form.Label>
-            <Form.Control
-              type="tel"
-              name="telefono"
-              value={form.telefono}
-              onChange={handleChange}
-              isInvalid={!!errores.telefono} />
-            <Form.Control.Feedback type="invalid">
-              {errores.telefono}
-            </Form.Control.Feedback>
-          </Form.Group>
-        </div>
+          <div className="row mt-3">
+            <Form.Group className="col-md-6" controlId="formTelefono">
+              <Form.Label>Teléfono</Form.Label>
+              <Form.Control
+                type="tel"
+                name="telefono"
+                value={form.telefono}
+                onChange={handleChange}
+                isInvalid={!!errores.telefono} />
+              <Form.Control.Feedback type="invalid">
+                {errores.telefono}
+              </Form.Control.Feedback>
+            </Form.Group>
+          </div>
 
-        <div className="row mt-3">
-          <Form.Group className="col-md-12" controlId="formMensaje">
-            <Form.Label>Mensaje</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={4}
-              name="mensaje"
-              value={form.mensaje}
-              onChange={handleChange}
-              isInvalid={!!errores.mensaje} />
-            <Form.Control.Feedback type="invalid">
-              {errores.mensaje}
-            </Form.Control.Feedback>
-          </Form.Group>
-        </div>
+          <div className="row mt-3">
+            <Form.Group className="col-md-12" controlId="formMensaje">
+              <Form.Label>Mensaje</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={4}
+                name="mensaje"
+                value={form.mensaje}
+                onChange={handleChange}
+                isInvalid={!!errores.mensaje} />
+              <Form.Control.Feedback type="invalid">
+                {errores.mensaje}
+              </Form.Control.Feedback>
+            </Form.Group>
+          </div>
 
-        <Button className="mt-3" variant="primary" type="submit">
-          Enviar Mensaje
-        </Button>
-      </Form>
+          <Button className="mt-3" variant="primary" type="submit">
+            Enviar Mensaje
+          </Button>
+        </Form>
 
-      <a
-        href="https://wa.me/56953397499"
-        className="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-whatsapp whatsapp-icon"></i>
-      </a>
+        <a
+          href="https://wa.me/56953397499"
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
+      </div>
     </div>
-
     
     
   );
