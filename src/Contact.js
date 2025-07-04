@@ -73,7 +73,7 @@ const ContactForm = () => {
 
   return (
 
-     <div style={{ transform: 'scale(0.80)', transformOrigin: 'top center' }}>
+     <div style={{ transform: 'scale(0.9)', transformOrigin: 'top center' }}>
       <div className="container mt-5" style={{ paddingBottom: '30px' }}>
         <h2>Contáctanos</h2>
 

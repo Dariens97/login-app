@@ -4,7 +4,7 @@ import NuestroEquipo from './equipo';
 
 const AboutUs = () => {
   return (
-    <div style={{ transform: 'scale(0.75)', transformOrigin: 'top center' }}>
+    <div style={{ transform: 'scale(1)', transformOrigin: 'top center' }}>
       <div className="container mt-5 text-center">
         <div style={{
           padding: '15px 0'
