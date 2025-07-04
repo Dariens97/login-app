@@ -280,32 +280,29 @@ const imagenes = [
           </div>
         </div>
 
-        <div className="container mt-1 pt-5 row text-center justify-content-between">
+        <div className="container mt-1 pt-5 row  justify-content-between">
           <div style={{ paddingBottom: '50px' }}>
             <h4>Networking</h4>
           </div>
-          <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
+          <div className="col-md-3 bg-light p-2 rounded shadow " style={{ fontSize: '1.1rem', textAlign: "justify"}}>
             <h5>Diseño de Redes LAN</h5>
-            <p className="fuente-personalizada" >Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable, adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando:
-
-                    Servidores ISE
-
-                    Plataforma Cisco Prime
-
-                    Configuración de Firewall y Appliance
-
-                    Políticas de calidad de servicio (QoS)
-
-                    Administración de redes LAN</p>
+            <p className="fuente-personalizada " >Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable, adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando: <br></br>
+                  
+                  - Servidores ISE<br />
+                  - Plataforma Cisco Prime<br />
+                  - Configuración de Firewall y Appliance<br />
+                  - Políticas de calidad de servicio (QoS)<br />
+                  - Administración de redes LAN
+                  </p>
           </div>
-          <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
+          <div className="col-md-3 bg-light p-2 rounded shadow" style={{ fontSize: '1.1rem', textAlign: "justify"}}>
             <h5>Soluciones WiFi</h5>
             <p className="fuente-personalizada" >Ofrecemos una solución integral para su red inalámbrica, que incluye:
                     Análisis de cobertura, dimensionamiento y detección de vulnerabilidades
                     Configuración y administración de tecnología WLC mediante AP ligeros o redes con AP autónomos
                     Implementación completa de redes WiFi</p>
           </div>
-          <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
+          <div className="col-md-3 bg-light p-2 rounded shadow" style={{ fontSize: '1.1rem',textAlign: "justify"}}>
             <h5>Cableado Estructurado</h5>
             <p className="fuente-personalizada" >Realizamos el levantamiento, diseño y proyección del cableado estructurado, además del mantenimiento preventivo y correctivo para asegurar un rendimiento óptimo del sistema.</p>
           </div>
@@ -317,37 +314,47 @@ const imagenes = [
             
             
             <div className="row justify-content-center mt-4">
-              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem',}}>
+              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem', textAlign: "justify"}}>
                 <h5>Inside</h5>
                 <p className="fuente-personalizada">
                   Brinde tranquilidad a su familia con un sistema de seguridad inalámbrico y de tecnología avanzada. 
                   <br></br>
+                   <br></br>
                   Reciba alertas de intrusión directamente en su teléfono, acompañadas de imágenes en tiempo real.
                 </p>
               </div>
-              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem',}}>
+              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem', textAlign: "justify"}}>
                 <h5>Perimetral</h5>
                 <p className="fuente-personalizada">
                   Proteja sus bienes con soluciones tecnológicas que disuaden robos y actos vandálicos. 
                   <br></br>
+                   <br></br>
                   Nuestra tecnología perimetral ayuda a reducir los riesgos tanto para su patrimonio como para sus colaboradores.
                 </p>
               </div>
             </div>
           
             <div className="row justify-content-center mt-3">
-              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem',}}>
-                <h5>Alarmas Comunitarias</h5>
-                <p className="fuente-personalizada">
+              <div>
+
+              </div>
+              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem',}}>  
+                <div>
+                   <h5 >Alarmas comunitarias</h5>
+                </div>
+                <div style={{ textAlign: "justify"}}>
+                  <p className="fuente-personalizada">
                   
                   Ofrecemos este tipo de alarmas para asegurar una protección coordinada, donde todos pueden monitorear en tiempo real.
                   <br></br>
                   <br></br>
                   Nuestro equipo de expertos lo asesorará para elegir la opción más adecuada para su sector.
                   
-                </p>
+                  </p>  
               </div>
-              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem',}}>
+                
+              </div>
+              <div className="col-md-5 bg-light p-4 m-2 rounded shadow" style={{ fontSize: '1.1rem',textAlign: "justify"}}>
                 <h5>Mantención de Equipos</h5>
                 <p className="fuente-personalizada">
                   Nuestro personal calificado realiza mantenciones periódicas para garantizar que su sistema de seguridad funcione siempre en condiciones óptimas.
@@ -364,7 +371,7 @@ const imagenes = [
 
 
 
-{/* 
+        {/* 
         <AnimatePresence mode="wait">
           {!detalleActivo ? (
             <motion.div
@@ -540,7 +547,29 @@ const imagenes = [
       <div className="container mt-5 pt-1">
         <div className="container mt-1 row text-center justify-content-between">
           <div style={{ paddingBottom: '50px' }}>
-            <h4>Nuestros Proveedores</h4>
+            <h4>Marcas con las que trabajamos</h4>
+
+            
+            <div className="d-flex justify-content-around align-items-center flex-wrap">
+              <img src="/img/marcas/hikvision.png" alt="Hikvision" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/dahua.png" alt="Dahua" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/tplink.png" alt="Ezviz" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/tplink.png" alt="Tapo" style={{ height: '50px', margin: '10px' }} />
+              
+            </div>
+            <div className="d-flex justify-content-around align-items-center flex-wrap">
+              <img src="/img/marcas/hikvision.png" alt="Cisco" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/dahua.png" alt="Huawei" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/tplink.png" alt="Fortinet" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/tplink.png" alt="Asus" style={{ height: '50px', margin: '10px' }} />
+              <img src="/img/marcas/tplink.png" alt="Linksys" style={{ height: '50px', margin: '10px' }} />
+              
+            </div>
+            <p className="text-muted mt-2 w-100 text-center" style={{ fontSize: '0.9rem' }}>
+                *Logos mostrados solo con fines informativos como parte de nuestras integraciones y servicios.
+              </p>
+
+
           </div>
         </div>
       </div>
