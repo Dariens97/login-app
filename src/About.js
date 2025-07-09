@@ -40,7 +40,7 @@ const AboutUs = () => {
                     <h4>🔐 Nuestra Misión</h4>
                     <p>
                       Satisfacer las necesidades actuales y dejar las bases para un crecimiento de la demanda tecnológica del cliente
-                      teniendo en cuenta sus: requerimientos, necesidades y situación socioeconómica, para así brindar una mejor calidad
+                      teniendo en cuenta sus: requerimientos, necesidades, para así brindar una mejor calidad
                       en el servicio impartido hacia nuestros clientes, todo esto dentro de las normas ISO. Esto es pensar globalmente y actuar localmente.
                     </p>
                   </Card.Body>
@@ -53,7 +53,7 @@ const AboutUs = () => {
                     <p>
                       Somos una empresa que tendrá reconocimiento y crecimiento en el tiempo gracias a nuestros valores, calidad del servicio
                       e innovación en cada uno de los procesos y productos hacia nuestros clientes, y consolidándonos en los próximos 5 años
-                      en una empresa con prestigio en asesorías e instalaciones de sistemas de seguridad.
+                      en una empresa con prestigio en asesorías e instalaciones de sistemas de seguridad y redes LAN.
                     </p>
                   </Card.Body>
                 </Card>

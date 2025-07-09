@@ -13,7 +13,7 @@ const imagenes = [
     src: process.env.PUBLIC_URL + "/img/arbol 2.jpg",
     alt: "Árbol",
     titulo: "Regalemos un árbol nativo",
-    texto: "Juntémonos para combatir el cambio climático y sus efectos producto en gran parte por nuestras acciones. Por cada proyecto aprobado en conjunto donaremos un árbol y se entregará una tarjeta al cliente como recuerdo por su aporte al programa Reforestemos."
+    texto: "Juntémonos para combatir el cambio climático y sus efectos producto en gran parte por nuestras acciones. Por cada proyecto aprobado en conjunto donaremos un árbol y se entregará una tarjeta al cliente como recuerdo por su aporte a la fundación Reforestemos."
   },
   {
     src: process.env.PUBLIC_URL + "/img/cctv.png",
@@ -268,15 +268,20 @@ const imagenes = [
           </div>
           <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
             <h5>Asistencia</h5>
-            <p className="fuente-personalizada" >Atención oportuna para reducir el impacto en la seguridad y resolver problemas técnicos de Nivel 1.</p>
+            <p className="fuente-personalizada" >Atención oportuna para reducir el impacto en las operaciones de su negocio. Por este servicio podremos restablecer lo antes posible la operatividad. Para ello contamos con dos niveles de asistencia.
+              el nivel 1: registra, categoriza diagnostica y da soluciones a requerimientos más recurrentes.
+              <br/>
+              caso contrario pasa a nivel 2 quienes investigan y resuelven. para ello se implementó una plataforma de administración de asistencias (TICKETS)
+              </p>
           </div>
           <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
             <h5>Servicio Preventivo</h5>
-            <p className="fuente-personalizada" >Anticipación a fallas y aseguramiento de la durabilidad del sistema de seguridad.</p>
+            <p className="fuente-personalizada" >Anticipación a fallas, es crucial para su continuidad operativa. El objetivo de un contrato de mantenimiento preventivo es aumentar la durabilidad de tu equipamiento tecnologico, previniendo desperfectos y minimizando fallas
+              </p>
           </div>
           <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
             <h5>Servicio por Eventos</h5>
-            <p className="fuente-personalizada" >Restauración de fallas inesperadas a nivel de hardware.</p>
+            <p className="fuente-personalizada" >Restauración de fallas inesperadas por efectos de la vida util u otras variables que provoquen que el equipo deje de funcionar</p>
           </div>
         </div>
 
