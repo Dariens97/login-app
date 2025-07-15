@@ -4,7 +4,7 @@ import {  Row, Col } from 'react-bootstrap';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function Home() {
-  const [detalleActivo, setDetalleActivo] = useState(null);
+  //const [detalleActivo, setDetalleActivo] = useState(null);
   const [imagenActual, setImagenActual] = useState(0);
 
   
