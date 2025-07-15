@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import "./App.css";
+import { useNavigate } from "react-router-dom";
+//import para el recaptcha
+import ReCAPTCHA from "react-google-recaptcha";
+
+
+
+
 
 const ContactForm = () => {
   const [form, setForm] = useState({
@@ -16,6 +23,7 @@ const ContactForm = () => {
   const [errores, setErrores] = useState({});
   const [enviado, setEnviado] = useState(false);
   const [errorEnvio, setErrorEnvio] = useState(null);
+  const navigate = useNavigate();
 
   const validar = () => {
     const nuevosErrores = {};
@@ -40,8 +48,29 @@ const ContactForm = () => {
     return nuevosErrores;
   };
 
+  //estados y referencias para el recaptcha
+  const captchaRef = useRef(null);
+  const [captchaValido, setCaptchaValido] = useState(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    //función para el recaptcha
+    // Verificar que el usuario completó el reCAPTCHA
+    const recaptchaValue = window.grecaptcha.getResponse();
+    if (!recaptchaValue) {
+      setErrorEnvio('Por favor verifica que no eres un robot.');
+      return;
+    }
+    //verificar si el captcha fue completado
+    const token = captchaRef.current.getValue();
+
+    if (!token) {
+      setCaptchaValido(false);
+      setErrorEnvio("Por favor completa el reCAPTCHA.");
+      return;
+    }
+
     const erroresValidados = validar();
     if (Object.keys(erroresValidados).length === 0) {
       // ENVÍO CON EMAILJS
@@ -56,6 +85,8 @@ const ContactForm = () => {
           setForm({ asunto: '',razonSocial:'', nombre: '', email: '', telefono: '', mensaje: '' });
           setErrores({});
           setErrorEnvio(null);
+          setTimeout(() => navigate("/gracias"), 500); // Redirige luego de 0.5s
+
         })
         .catch((err) => {
           console.error('Error al enviar:', err);
@@ -92,9 +123,9 @@ const ContactForm = () => {
                 isInvalid={!!errores.asunto}
               >
                 <option value="">-- Selecciona un asunto --</option>
-                <option value="Consulta General">Gestion de incidencias</option>
-                <option value="Soporte Técnico">Networking</option>
-                <option value="Cotización">Cámaras y Alarmas</option>
+                <option value="Gestión de incidencias">Gestion de incidencias</option>
+                <option value="Networking">Networking</option>
+                <option value="Camaras y Alarmas">Cámaras y Alarmas</option>
               </Form.Select>
               <Form.Control.Feedback type="invalid">
                 {errores.asunto}
@@ -174,9 +205,41 @@ const ContactForm = () => {
             </Form.Group>
           </div>
 
+          {/*boton para el recaptcha
+          <div className="g-recaptcha" data-sitekey="6Lc2D4MrAAAAACl7zA50alnto73ymVFBiSfJGjMx"></div>
+          <button type="submit">Enviar</button>
+
           <Button className="mt-3" variant="primary" type="submit">
             Enviar Mensaje
-          </Button>
+          </Button>*/}
+
+          {/*boton actualizado para el recaptcha */}
+          <div className="mt-4">
+            {/*<div className="g-recaptcha mb-3" data-sitekey="6Lc2D4MrAAAAACl7zA50alnto73ymVFBiSfJGjMx"></div>*/}
+
+            <div className="my-3 d-flex justify-content-center">
+              <ReCAPTCHA
+                ref={captchaRef}
+                sitekey="6Lc2D4MrAAAAACl7zA50alnto73ymVFBiSfJGjMx"
+                onChange={() => setCaptchaValido(true)}
+              />
+            </div>
+
+            {captchaValido === false && (
+              <div className="text-danger text-center">Por favor completa el reCAPTCHA</div>
+            )}
+
+
+
+            {/*<Button variant="primary" type="submit">
+              Enviar Mensaje
+            </Button>*/}
+
+            <Button className="mt-3" variant="primary" type="submit" disabled={!captchaValido}>
+              Enviar Mensaje
+            </Button>
+
+          </div>
         </Form>
 
         <a
