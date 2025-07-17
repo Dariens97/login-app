@@ -31,7 +31,7 @@ function Footer() {
             <FaFacebook size={30} />
           </a>
           <a
-            href="https://wa.me/56953397499" // cambia por tu número de WhatsApp
+            href="https://wa.me/56957928042" // cambia por tu número de WhatsApp
             target="_blank"
             rel="noopener noreferrer"
             className="text-white mx-3"
