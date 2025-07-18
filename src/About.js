@@ -4,14 +4,15 @@ import NuestroEquipo from './equipo';
 
 const AboutUs = () => {
   return (
-    <div style={{ transform: 'scale(1)', transformOrigin: 'top center' }}>
-      <div className="container mt-5 text-center">
+    <div style={{ backgroundColor: "#f0f0f0", minHeight: "100vh", color: "black" }}>
+      <div style={{ transform: 'scale(1)', transformOrigin: 'top center' }}>
+      <div className="container text-center">
         <div style={{
           padding: '15px 0'
         }}>
           <Container>
-            <h2 className="text-center mb-5" style={{ fontWeight: 'bold' }}>Nosotros</h2>
-
+            <h2 className="text-center mt-4" style={{ fontWeight: 'bold', fontSize:'30pt', color:'#21AFEB',  paddingBottom: '0.1px' }}>Nosotros</h2>
+              <hr style={{ paddingBottom: '50px', color:'#0C3C5F'}}/>
             <Row className="align-items-center mb-5 " >
               <Col md={4}>
                 <img
@@ -35,11 +36,11 @@ const AboutUs = () => {
               </Col>
             </Row>
 
-            <Row className="text-center">
+            <Row className="text-center mt-4">
               <Col md={4}>
-                <Card className="bg-transparent shadow border-0"style={{minHeight:'325px'}}>
+                <Card className=" shadow border-0 mt-4"style={{minHeight:'325px'}}>
                   <Card.Body>
-                    <h4>🔐 Nuestra Misión</h4>
+                    <h4 style={{ fontWeight: 'bold', fontSize:'20pt', color:'#21AFEB',  paddingBottom: '20px' }}>🔐 Nuestra Misión</h4>
                     <div style={{ textAlign: "justify"}}>
                       <p>
                         Satisfacer las necesidades actuales y dejar las bases para un crecimiento de la demanda tecnológica del cliente
@@ -51,9 +52,9 @@ const AboutUs = () => {
                 </Card>
               </Col>
               <Col md={4}>
-                <Card className="bg-transparent shadow border-0" style={{minHeight:'325px'}}>
+                <Card className=" shadow border-0 mt-4" style={{minHeight:'325px'}}>
                   <Card.Body>
-                    <h4>🚀 Visión</h4>
+                    <h4 style={{ fontWeight: 'bold', fontSize:'20pt', color:'#21AFEB',  paddingBottom: '20px' }}>🚀 Visión</h4>
                     <div style={{ textAlign: "justify"}}>
                       <p>
                         Somos una empresa que tendrá reconocimiento y crecimiento en el tiempo gracias a nuestros valores, calidad del servicio
@@ -65,9 +66,9 @@ const AboutUs = () => {
                 </Card>
               </Col>
               <Col md={4}>
-                <Card className="bg-transparent shadow border-0"style={{minHeight:'325px'}}>
+                <Card className=" shadow border-0 mt-4"style={{minHeight:'325px'}}>
                   <Card.Body>
-                    <h4>💡 Valores</h4>
+                    <h4 style={{ fontWeight: 'bold', fontSize:'20pt', color:'#21AFEB',  paddingBottom: '20px' }}>💡 Valores</h4>
                     <div style={{ textAlign: "justify"}}>
                       <p>
                         Nuestra prioridad son las personas y como tal los valores que nos mueven son: justicia, coherencia, honestidad,
@@ -82,8 +83,8 @@ const AboutUs = () => {
           </Container>
         </div>
       </div>
+      </div>
     </div>
-
 
 );
 

@@ -8,7 +8,8 @@ const NuestroEquipo = () => {
 
         <div style={{ padding: '40px 0' }}>
           <Container>
-            <h2 className="text-center mb-4">Nuestro Equipo</h2>
+            <h2 className="text-center mb-1" style={{ fontWeight: 'bold', fontSize:'30pt', color:'#21AFEB',  paddingBottom: '20px' }}>Nuestro Equipo</h2>
+            <hr style={{ color:'#0C3C5F', paddingBottom:'30px'}}/>
             <Row className="justify-content-center">
               {equipo.map((persona, idx) => (
                 <Col key={idx} md={4} className="mb-4">
@@ -27,13 +28,14 @@ const NuestroEquipo = () => {
               ))}
             </Row>
 
-            <h2 className="text-center mt-5 mb-4">Testimonios</h2>
+            <h2 className="text-center mt-5 mb-4" style={{ fontWeight: 'bold', fontSize:'30pt', color:'#21AFEB'}}>Testimonios</h2>
+            <hr style={{ color:'#0C3C5F'}}/>
             <Carousel indicators={false} interval={5000}>
               {testimonios.map((item, idx) => (
                 <Carousel.Item key={idx}>
                   <div className="text-center p-4" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <p className="fs-5 fst-italic">“{item.comentario}”</p>
-                    <h6 className="fw-bold mt-3">- {item.autor}</h6>
+                    <p className="fs-4 fst-italic" >“{item.comentario}”</p>
+                    <h6 className="fw-bold mt-3" style={{fontSize:'15pt'}}>- {item.autor}</h6>
                   </div>
                 </Carousel.Item>
               ))}

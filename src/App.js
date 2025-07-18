@@ -20,8 +20,26 @@ function Navigation() {
   const handleNavLinkClick = () => {
     setIsNavCollapsed(true);
   };
+
+    //para resaltar al pasar el mouse
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+   const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  const estiloHover = {
+    backgroundColor: isHovered ? 'yellow' : 'transparent',
+    padding: '10px',
+    cursor: 'pointer',
+  };
+
+ 
+
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark navbar-gradient">
+    <nav className="navbar navbar-expand-lg navbar-gradient" style={{  background: 'linear-gradient(to right, black, #21AFEB)'}}>
       <div className="container-fluid px-4">
         {/* Logo alineado al centro-izquierda */}
         {/*<Link className="navbar-brand d-flex align-items-center" to="/" style={{ marginLeft: "20rem"}}>*/}
@@ -32,17 +50,6 @@ function Navigation() {
           {/*se verificará para sacar o dejar */}
           <small className="gris mb-0">Soluciones <br></br>Tecnológicas</small>
         </Link>
-
-        {/* Botón hamburguesa para móviles 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >*/}
 
         <button
           className="navbar-toggler"
@@ -71,20 +78,20 @@ function Navigation() {
           </ul>
         </div>*/}
 
-        <div className={`collapse navbar-collapse ${!isNavCollapsed ? 'show' : ''}`} id="navbarContent">
-          <ul className="navbar-nav ms-auto text-center">
-            <li className="nav-item">
-              <Link className="nav-link fs-5" to="/" onClick={handleNavLinkClick}>Inicio</Link>
+        <div className={`collapse navbar-collapse ${!isNavCollapsed ? 'show' : ''}`} id="navbarContent" >
+          <ul className="navbar-nav ms-auto text-center" style={{border: '2px solid', color:'#f0f0f0'}}>
+            <li className="nav-item" style={{ estiloHover}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/" onClick={handleNavLinkClick}>Inicio</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link fs-5" to="/about" onClick={handleNavLinkClick}>Nosotros</Link>
+              <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/about" onClick={handleNavLinkClick}>Nosotros</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link fs-5" to="/contact" onClick={handleNavLinkClick}>Contacto</Link>
+              <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/contact" onClick={handleNavLinkClick}>Contacto</Link>
             </li>
           </ul>
         </div>
-
+            {/* linear-gradient(to right, black, gold)*/}
 
       </div>
     </nav>
