@@ -11,8 +11,6 @@ function Home() {
   const [direccion, setDireccion] = useState(1); // 1 = siguiente, -1 = anterior
   const temporizadorRef = useRef();
 
-
-  
 const imagenes = [
   {
     src: process.env.PUBLIC_URL + "/img/arbol 2.jpg",
@@ -145,9 +143,12 @@ const imagenes = [
       {/* div contenedor*/}
       <div style={{ minHeight: '100vh', width: '100%', overflowX: 'hidden' }}>
         <div className="w-100 h-100 px-3">
-
-          <h3 className="text-center pt-1 pb-5">Nuestros Servicios</h3>
+          <h4 class="expressive-heading-04">
+            
+          </h4>
+          <h3 className="text-center pt-3 pb-5" style={{ fontWeight: 'bold', fontSize:'30pt', color:'#21AFEB',  paddingBottom: '20px' }}>Nuestros Servicios</h3>
           <div className="position-relative w-100 overflow-hidden" style={{ minHeight: '400px' }}>
+            <hr  style={{ color:'#0C3C5F', height:'3px', backgroundColor: '#0C3C5F'}}/>
             <AnimatePresence mode="wait">
               <motion.div
                 key={imagenActual}
@@ -156,6 +157,13 @@ const imagenes = [
                 exit={{ x: direccion === 1 ? -300 : 300, opacity: 0 }}
                 transition={{ duration: 0.6 }}
               >
+                {/*<motion.div
+                  key={imagenActual}
+                  initial={{ x: direccion === 1 ? -300 : 300, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: direccion === 1 ? -300 : 300, opacity: 0 }}
+                  transition={{ duration: 0.6 }}
+                > */}
 
                 <Row className="align-items-center">
                   <Col md={6} className="text-center mb-5 mb-md-0">
@@ -191,6 +199,7 @@ const imagenes = [
             >
               <ChevronRight size={24} />
             </button>
+            <hr  style={{ color:'#0C3C5F', height:'3px', backgroundColor: '#0C3C5F'}}/>
           </div>
 
 
@@ -293,11 +302,13 @@ const imagenes = [
           <div className="container mt-5 pt-1">
 
             <div className="container mt-1 row text-center justify-content-between">
-              <div style={{ paddingBottom: '50px' }}>
-                <h4>Gestión de Incidencias</h4>
+              
+              <div>
+                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Gestión de Incidencias</h4>
+                <hr style={{ color:'#0C3C5F'}}/>
               </div>
-              <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
-                <h5>Asistencia <br/> <img src={`${process.env.PUBLIC_URL}/img/Asistencia.jpg`} alt="asistencia" style={{ height: '50px', margin: '10px' }} /></h5>
+              <div className="col-md-3 bg-light p-4 rounded shadow mt-4" style={{ fontSize: '1.1rem'}}>
+                <h5 >Asistencia <br/> <img src={`${process.env.PUBLIC_URL}/img/Asistencia.jpg`} alt="asistencia" style={{ height: '50px', margin: '10px' }} /></h5>
                   <div style={{ textAlign: "justify"}}>
                     <p className="fuente-personalizada" >Atención oportuna para reducir el impacto en las operaciones de su negocio. Por este servicio podremos restablecer lo antes posible la operatividad. Para ello contamos con dos niveles de asistencia.
                       el nivel 1: registra, categoriza diagnostica y da soluciones a requerimientos más recurrentes.
@@ -306,14 +317,15 @@ const imagenes = [
                     </p>
                   </div>
               </div>
-              <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
+              
+              <div className="col-md-3 bg-light p-4 rounded shadow mt-4" style={{ fontSize: '1.1rem', paddingTop:'50px'}}>
                 <h5>Servicio Preventivo <br/><img src={`${process.env.PUBLIC_URL}/img/Preventivo.png`} alt="preventivo" style={{ height: '50px', margin: '10px' }} /></h5>
                 <div style={{ textAlign: "justify"}}>
                     <p className="fuente-personalizada" >Anticipación a fallas, es crucial para su continuidad operativa. El objetivo de un contrato de mantenimiento preventivo es aumentar la durabilidad de tu equipamiento tecnologico, previniendo desperfectos y minimizando fallas
                     </p>
                   </div>
               </div>
-              <div className="col-md-3 bg-light p-4 rounded shadow" style={{ fontSize: '1.1rem',}}>
+              <div className="col-md-3 bg-light p-4 rounded shadow mt-4" style={{ fontSize: '1.1rem',}}>
                 <h5>Servicio por Eventos <br/><img src={`${process.env.PUBLIC_URL}/img/Eventos.png`} alt="eventos" style={{ height: '50px', margin: '10px' }} /></h5>
                 <div style={{ textAlign: "justify"}}>
                   <p className="fuente-personalizada" >Restauración de fallas inesperadas por efectos de la vida util u otras variables que provoquen que el equipo deje de funcionar</p>
@@ -323,9 +335,10 @@ const imagenes = [
 
             <div className="container mt-1 pt-5 row text-center justify-content-between">
               <div style={{ paddingBottom: '50px' }}>
-                <h4>Networking</h4>
+                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Networking</h4>
+                <hr style={{ color:'#0C3C5F'}}/>
               </div>
-              <div className="col-md-3 bg-light p-2 rounded shadow " style={{ fontSize: '1.1rem'}}>
+              <div className="col-md-3 bg-light p-2 rounded shadow mt-4" style={{ fontSize: '1.1rem'}}>
                 <h5>Diseño de Redes LAN <br/><img src={`${process.env.PUBLIC_URL}/img/network.png`} alt="network" style={{ height: '50px', margin: '10px' }} /></h5>
                 <div style={{ textAlign: "justify"}}>
                   <p className="fuente-personalizada " >Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable, adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando: <br></br>
@@ -338,7 +351,7 @@ const imagenes = [
                   </p>
                 </div>
               </div>
-              <div className="col-md-3 bg-light p-2 rounded shadow" style={{ fontSize: '1.1rem'}}>
+              <div className="col-md-3 bg-light p-2 rounded shadow mt-4" style={{ fontSize: '1.1rem'}}>
                 <h5>wireless <br/><img src={`${process.env.PUBLIC_URL}/img/wireless.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} /></h5>
                 <div style={{ textAlign: "justify"}}>
                   <p className="fuente-personalizada" >Ofrecemos soluciones de conectividad para su diversidad de dispositivos inalámbricos asegurando; Robustez,
@@ -351,7 +364,7 @@ const imagenes = [
                     -Implementación wifi</p>
                 </div>
               </div>
-              <div className="col-md-3 bg-light p-2 rounded shadow" style={{ fontSize: '1.1rem'}}>
+              <div className="col-md-3 bg-light p-2 rounded shadow mt-4" style={{ fontSize: '1.1rem'}}>
                 <h5>Cableado Estructurado</h5>
                 <div style={{ textAlign: "justify"}}>
                   <p className="fuente-personalizada" >
@@ -366,7 +379,8 @@ const imagenes = [
             </div>
 
             <div className="container mt-5 pt-4 text-center">
-              <h4>Cámaras y Alarmas</h4>
+              <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Cámaras y Alarmas</h4>
+              <hr style={{ color:'#0C3C5F'}}/>
               <div className="row mt-4">
                 
                 
@@ -617,8 +631,9 @@ const imagenes = [
           <div className="container mt-5 pt-1">
             <div className="container mt-1 row text-center justify-content-between">
               <div style={{ paddingBottom: '50px' }}>
-                <h4>Marcas con las que trabajamos</h4>
-
+                <h2 className="titulo  text-gradient-blue" style={{fontSize:'30pt', color:'#21AFEB'}}>Marcas con las que trabajamos</h2>
+                <hr style={{ color:'#0C3C5F'}}/>
+                
                 
                 <div className="d-flex justify-content-around align-items-center flex-wrap">
                   <img src={`${process.env.PUBLIC_URL}/img/hikvision.png`} alt="Hikvision" style={{ height: '50px', margin: '10px' }} />
@@ -635,8 +650,9 @@ const imagenes = [
                   <img src={`${process.env.PUBLIC_URL}/img/marcas/linksys.png`} alt="Linksys" style={{ height: '50px', margin: '10px' }} />
                   
                 </div>
+                <hr style={{ color:'#0C3C5F'}}/>
                 <p className="text-muted mt-2 w-100 text-center" style={{ fontSize: '0.9rem' }}>
-                    *Logos mostrados solo con fines informativos como parte de nuestras integraciones y servicios.
+                    *Logos mostrados solo con fines informativos*
                   </p>
 
 
@@ -648,7 +664,8 @@ const imagenes = [
           <div className="container mt-5 pt-1">
             <div className="container mt-1 row text-center justify-content-between">
               <div style={{ paddingBottom: '50px' }}>
-                <h4>Nuestros clientes</h4>
+                <h4 className="titulo  text-gradient-blue" style={{fontSize:'30pt', color:'#21AFEB'}}>Nuestros clientes</h4>
+                <hr style={{ color:'#0C3C5F'}}/>
               </div>
             </div>
           </div>
