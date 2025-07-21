@@ -13,15 +13,16 @@ const NuestroEquipo = () => {
             <Row className="justify-content-center">
               {equipo.map((persona, idx) => (
                 <Col key={idx} md={4} className="mb-4">
-                  <Card className="text-center shadow" style={{ borderRadius: '15px' }}>
+                  <Card className="text-center shadow h-100" style={{ borderRadius: '15px' }}>
                     <Card.Img
                       variant="top"
                       src={persona.imagen}
                       style={{ height: '300px', objectFit: 'cover', borderTopLeftRadius: '15px', borderTopRightRadius: '15px' }}
                     />
-                    <Card.Body>
+                    <Card.Body style={{ minHeight: '180px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <Card.Title>{persona.nombre}</Card.Title>
                       <Card.Text>{persona.cargo}</Card.Text>
+                      <Card.Text>{persona.relevancia}</Card.Text>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -51,11 +52,13 @@ const equipo = [
   {
     nombre: 'Dariens Echeverria M.',
     cargo: 'Gerente de Negocios',
+    relevancia:'Fundador',
     imagen: process.env.PUBLIC_URL + '/img/Dariens negocios.jpg'
   },
   {
     nombre: 'Claudio Caffi A.',
     cargo: 'Gerente de Proyectos',
+    relevancia:'Fundador',
     imagen: process.env.PUBLIC_URL + '/img/Socio-1-editado.jpg'
   },
   {

@@ -7,6 +7,7 @@ import Home from './Home';
 import Footer from './Footer';
 import Contact from "./Contact";
 import About from "./About";
+import Pruebas from "./pruebas";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Gracias from "./Gracias";
 
@@ -21,28 +22,10 @@ function Navigation() {
     setIsNavCollapsed(true);
   };
 
-    //para resaltar al pasar el mouse
-  const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-   const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-  const estiloHover = {
-    backgroundColor: isHovered ? 'yellow' : 'transparent',
-    padding: '10px',
-    cursor: 'pointer',
-  };
-
- 
-
-
   return (
     <nav className="navbar navbar-expand-lg navbar-gradient" style={{  background: 'linear-gradient(to right, black, #21AFEB)'}}>
       <div className="container-fluid px-4">
-        {/* Logo alineado al centro-izquierda */}
-        {/*<Link className="navbar-brand d-flex align-items-center" to="/" style={{ marginLeft: "20rem"}}>*/}
+
         {/* Logo alineado a la izquierda */}
         <Link className="navbar-brand d-flex align-items-center mx-auto" to="/">
 
@@ -63,32 +46,20 @@ function Navigation() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Menú alineado a la derecha, pero no tan al borde 
-        <div className="collapse navbar-collapse justify-content-end" id="navbarContent">
-          <ul className="navbar-nav" style={{ marginRight: '17rem' }}>
-            <li className="nav-item px-2">
-              <Link className="nav-link fs-5" to="/">Inicio</Link>
-            </li>
-            <li className="nav-item px-2">
-              <Link className="nav-link fs-5" to="/about">Nosotros</Link>
-            </li>
-            <li className="nav-item px-2">
-              <Link className="nav-link fs-5" to="/contact">Contacto</Link>
-            </li>
-          </ul>
-        </div>*/}
-
         <div className={`collapse navbar-collapse ${!isNavCollapsed ? 'show' : ''}`} id="navbarContent" >
           <ul className="navbar-nav ms-auto text-center" style={{border: '2px solid', color:'#f0f0f0'}}>
-            <li className="nav-item" style={{ estiloHover}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/" onClick={handleNavLinkClick}>Inicio</Link>
+            <li className="nav-item tarjeta-zoom">
+              <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}}  to="/" onClick={handleNavLinkClick}>Inicio</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item tarjeta-zoom">
               <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/about" onClick={handleNavLinkClick}>Nosotros</Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item tarjeta-zoom">
               <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/contact" onClick={handleNavLinkClick}>Contacto</Link>
             </li>
+            {/*<li className="nav-item tarjeta-zoom">
+              <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/pruebas" onClick={handleNavLinkClick}>Pruebas</Link>
+            </li>*/}
           </ul>
         </div>
             {/* linear-gradient(to right, black, gold)*/}
@@ -112,6 +83,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gracias" element={<Gracias />} /> {/* NUEVA RUTA */}
+          {/*<Route path="/pruebas" element={<Pruebas />} /> RUTA DE PRUEBA*/}
         </Routes>
         <Footer/>
       </div>
