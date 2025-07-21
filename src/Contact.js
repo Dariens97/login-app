@@ -5,8 +5,8 @@ import "./App.css";
 import { useNavigate } from "react-router-dom";
 //import para el recaptcha
 import ReCAPTCHA from "react-google-recaptcha";
-
-
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 
 
@@ -101,6 +101,18 @@ const ContactForm = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setErrores({ ...errores, [e.target.name]: null });
   };
+  //funcion para cuando apretan un boton y se cargue la opcion con la cual lo cargaron
+  const location = useLocation();
+
+    useEffect(() => {
+      if (location.state && location.state.asuntoPreseleccionado) {
+        setForm((prevForm) => ({
+          ...prevForm,
+          asunto: location.state.asuntoPreseleccionado,
+        }));
+      }
+    }, [location.state]);
+
 
   return (
     <div style={{ backgroundColor: "#f0f0f0", minHeight: "100vh", color: "black" }}>
@@ -212,14 +224,6 @@ const ContactForm = () => {
                 </Form.Control.Feedback>
               </Form.Group>
             </div>
-
-            {/*boton para el recaptcha
-            <div className="g-recaptcha" data-sitekey="6Lc2D4MrAAAAACl7zA50alnto73ymVFBiSfJGjMx"></div>
-            <button type="submit">Enviar</button>
-
-            <Button className="mt-3" variant="primary" type="submit">
-              Enviar Mensaje
-            </Button>*/}
 
             {/*boton actualizado para el recaptcha */}
             <div className="mt-4">
