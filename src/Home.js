@@ -236,7 +236,6 @@ const imagenes = [
 
                       <li>-Análisis de coberturas</li>
                       <li> -Detección de vulnerabilidades</li>
-                      <li>- Configuración de Firewall y Appliance</li>
                       <li> -Tecnología WLC (Wireless LAN Controller)</li>
                       <li>-Implementación wifi</li>
                     </ul>
@@ -330,7 +329,7 @@ const imagenes = [
                 </div>
                 
 
-                <div className="col tarjeta-zoom">
+                <div className="col tarjeta-zoom pt-4">
                   <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
                     <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
                       <h4 className="my-0 fw-normal">Alarmas comunitarias</h4>
@@ -414,7 +413,7 @@ const imagenes = [
             </div>
           </div>
 
-          {/* BLOQUE DE CLIENTES */}
+          {/* BLOQUE DE CLIENTES
           <div className="container mt-5 pt-1">
             <div className="container mt-1 row text-center justify-content-between">
               <div style={{ paddingBottom: '50px' }}>
@@ -422,7 +421,7 @@ const imagenes = [
                 <hr style={{ color:'#0C3C5F'}}/>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
         </div> 

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Form, Button, Alert, InputGroup } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import "./App.css";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-
 
 
 const ContactForm = () => {
@@ -195,16 +194,21 @@ const ContactForm = () => {
             <div className="row mt-3">
               <Form.Group className="col-md-6" controlId="formTelefono">
                 <Form.Label>Teléfono <span class="text-danger small pt-0 mt-0">* </span></Form.Label>
-                <Form.Control
-                  type="tel"
-                  name="telefono"
-                  className="shadow"
-                  value={form.telefono}
-                  onChange={handleChange}
-                  isInvalid={!!errores.telefono} />
-                <Form.Control.Feedback type="invalid">
-                  {errores.telefono}
-                </Form.Control.Feedback>
+
+                 <InputGroup className="shadow">
+                  <InputGroup.Text id="basic-addon1">+56</InputGroup.Text>
+                  <Form.Control
+                    type="tel"
+                    name="telefono"
+                    value={form.telefono}
+                    onChange={handleChange}
+                    isInvalid={!!errores.telefono}
+                    aria-describedby="basic-addon1"
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    {errores.telefono}
+                  </Form.Control.Feedback>
+                </InputGroup>
               </Form.Group>
             </div>
 
@@ -254,7 +258,10 @@ const ContactForm = () => {
             </div>
           </Form>
 
-          <a
+          
+        </div>
+      </div>
+      <a
             href="https://wa.me/56957928042"
             className="whatsapp-float"
             target="_blank"
@@ -262,8 +269,6 @@ const ContactForm = () => {
           >
             <i className="fab fa-whatsapp whatsapp-icon"></i>
           </a>
-        </div>
-      </div>
     </div>
     
   );
