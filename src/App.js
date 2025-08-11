@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Contact from "./Contact";
 import About from "./About";
 import Pruebas from "./pruebas";
+import TicketForm from "./formulario";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Gracias from "./Gracias";
 
@@ -57,6 +58,9 @@ function Navigation() {
             <li className="nav-item tarjeta-zoom">
               <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/contact" onClick={handleNavLinkClick}>Contacto</Link>
             </li>
+            {/*link para el formulario */}
+             <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/tickets">Crear Ticket</Link>
+
             {/*<li className="nav-item tarjeta-zoom">
               <Link className="nav-link fs-5" style={{ color:'#f0f0f0'}} to="/pruebas" onClick={handleNavLinkClick}>Pruebas</Link>
             </li>*/}
@@ -82,6 +86,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          {/*link para el formulario */}
+          <Route path="/tickets" element={<TicketForm />} />
+
           <Route path="/gracias" element={<Gracias />} /> {/* NUEVA RUTA */}
           {/*<Route path="/pruebas" element={<Pruebas />} /> RUTA DE PRUEBA*/}
         </Routes>
