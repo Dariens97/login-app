@@ -26,7 +26,7 @@ function Footer() {
             <FaInstagram size={22} />
           </a>
           <a
-            href="https://www.facebook.com/profile.php?id=61566330650513"
+            href="https://www.facebook.com/profile.php?id=61578633135960"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white icono-zoom"

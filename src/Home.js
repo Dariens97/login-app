@@ -115,174 +115,13 @@ const imagenes = [
 
           {/* BLOQUE DE SERVICIOS */}
           <div className="container mt-5 pt-1">
+             
+             {/*camaras y alarmas */}
 
-            {/*titulo de las nuevas tarjetas gestion de incidencias */}
-            <div className="mt-1 row text-center justify-content-between">
-              
-              <div>
-                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Gestión de Incidencias</h4>
-                <hr style={{ color:'#0C3C5F'}}/>
-              </div>
-            </div>
-            {/*nuevas tarjetas gestion de incidencias*/}
-            <div className="row row-cols-1 row-cols-md-3 mb-3 text-center" style={{ fontSize: '1.1rem'}}>
-              
-              {/*Asistencia */}
-              <div className="col tarjeta-zoom pt-4">
-                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
-                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
-                    <h4 className="my-0 fw-normal">Asistencia</h4>
-                    <img src={`${process.env.PUBLIC_URL}/img/Asistencia.png`} alt="network" style={{ height: '50px', margin: '10px' }}/>
-                  </div>
-                  <div className="card-body d-flex flex-column justify-content-between">
-                    <h5 className="fuente-personalizada">
-                      Atención oportuna para reducir el impacto en las operaciones de su negocio, para ello contamos con dos niveles de asistencia; el primero registra, categoriza, diagnostica y da soluciones a requerimientos más recurrentes caso contrario pasa a Nivel 2 quienes investigan y resuelven.
-                    </h5>
-                    </div>
-                </div>
-              </div>
-
-              {/*Servicio Preventivo*/}
-              <div className="col tarjeta-zoom pt-4">
-                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
-                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
-                    <h4 className="my-0 fw-normal">Servicio Preventivo</h4>
-                    <img src={`${process.env.PUBLIC_URL}/img/Preventivo.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
-                  </div>
-                  <div className="card-body d-flex flex-column justify-content-between">
-                    <h5 className="fuente-personalizada">Anticipación a fallas, es crucial para su continuidad operativa. El objetivo de un contrato es aumentar la durabilidad de tu equipamiento tecnológico y minimizando fallas.</h5>
-                    </div>
-                </div>
-              </div>
-              
-              {/*Servicio Preventivo*/}
-              <div className="col tarjeta-zoom pt-4">
-                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
-                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
-                    <h4 className="my-0 fw-normal">Servicio por Eventos</h4>
-                    <img src={`${process.env.PUBLIC_URL}/img/Eventos.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
-                  </div>
-                  <div className="card-body d-flex flex-column justify-content-between">
-                    <h5 className="fuente-personalizada">Restauración de fallas inesperadas por efectos de la vida util u otras variables que provoquen que el equipo deje de funcionar</h5>
-                    </div>
-                </div>
-              </div>
-              
-
-            </div>
-
-            {/*boton contactanos de gestion de incidencias*/}
-              <div className=''>
-                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
-                  <Link
-                    className="nav-link fs-5"
-                    style={{ color: '#f0f0f0' }}
-                    to="/contact"
-                    state={{ asuntoPreseleccionado: "Gestión de incidencias" }} // Cambia por cada botón
-                  >
-                    Contáctanos
-                  </Link>
-                </button>
-              </div>
-            {/*-------------------------------------------------------------------------------------------------*/}
-
-
-
-
-            {/*titulo de las nuevas tarjetas networking */}
-            <div className="mt-1 pt-5 row text-center justify-content-between">
-              <div style={{ paddingBottom: '50px' }}>
-                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Networking</h4>
-                <hr style={{ color:'#0C3C5F'}}/>
-              </div>
-
-            </div>
-            {/*nuevas tarjetas networking*/}
-            <div className="row row-cols-1 row-cols-md-3 mb-3 text-center" style={{ fontSize: '1.1rem'}}>
-
-              <div className="col tarjeta-zoom pt-4">
-                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
-                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
-                    <h4 className="my-0 fw-normal">Diseño de redes LAN</h4>
-                    <img src={`${process.env.PUBLIC_URL}/img/network.png`} alt="network" style={{ height: '50px', margin: '10px' }}/>
-                  </div>
-                  <div className="card-body d-flex flex-column justify-content-between">
-                    <h5 className="fuente-personalizada">
-                      Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable,
-                      adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando:
-                    </h5>
-                    <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify" }}>
-                      <li>- Servidores ISE</li>
-                      <li>- Plataforma Cisco Prime</li>
-                      <li>- Configuración de Firewall y Appliance</li>
-                      <li>- Políticas de calidad de servicio (QoS)</li>
-                      <li>- Administración de redes LAN</li>
-                    </ul>
-                    </div>
-                </div>
-              </div>
-
-                
-              <div className="col tarjeta-zoom  pt-4">
-                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
-                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
-                    <h4 className="my-0 fw-normal">wireless</h4>
-                    <img src={`${process.env.PUBLIC_URL}/img/wireless.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
-                  </div>
-                  <div className="card-body d-flex flex-column justify-content-between">
-                    <h5 className="fuente-personalizada">Ofrecemos soluciones de conectividad para su diversidad de dispositivos inalámbricos asegurando; Robustez,
-                      seguridad y escalabilidad en la transmisión de los datos</h5>
-                    <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify"}}>
-
-                      <li>-Análisis de coberturas</li>
-                      <li> -Detección de vulnerabilidades</li>
-                      <li> -Tecnología WLC (Wireless LAN Controller)</li>
-                      <li>-Implementación wifi</li>
-                    </ul>
-                    </div>
-                </div>
-              </div>
-
-              <div className="col tarjeta-zoom  pt-4">
-                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
-                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
-                    <h4 className="my-0 fw-normal">Cableado Estructurado</h4>
-                    <img src={`${process.env.PUBLIC_URL}/img/cableadoestructurado.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
-                  </div>
-                  <div className="card-body d-flex flex-column justify-content-between">
-                    <h5 className="fuente-personalizada">Realizamos el levantamiento, diseño y proyección del cableado estructurado. 
-                      Además ofrecemos el servicio de mantenimiento preventivo y corrección para
-                      Asegurar un rendimiento óptimo de su estructura alámbrica.
-                      <br/>
-                      <br/>
-                      Tambien contamos con certificaciones de puntos de red.
-                      </h5>
-                    </div>
-                </div>
-              </div>
-            </div>
-            {/*boton contactanos de networking*/}
-              <div>
-                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
-                  <Link
-                    className="nav-link fs-5"
-                    style={{ color: '#f0f0f0' }}
-                    to="/contact"
-                    state={{ asuntoPreseleccionado: "Networking" }} // Cambia por cada botón
-                  >
-                    Contáctanos
-                  </Link>
-                </button>
-              </div>
-            {/*-------------------------------------------------------------------------------------------------*/}
-
-
-
-
-
-            {/*titulo de las nuevas tarjetas camaras y alarmas */}
-            <div className="mt-5 pt-4 text-center">
+             {/*titulo de las nuevas tarjetas camaras y alarmas */}
+            <div className="mt-1 pt-4 text-center">
               <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Cámaras y Alarmas</h4>
+              
               <hr style={{ color:'#0C3C5F'}}/>
               <div className="row mt-4">
                 
@@ -362,8 +201,8 @@ const imagenes = [
               </div>
               
               {/*boton contactanos de camaras y alarmas*/}
-              <div className='pt-3'>
-                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
+              <div className='pt-3 mt-4'>
+                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto  " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
                   <Link
                     className="nav-link fs-5"
                     style={{ color: '#f0f0f0' }}
@@ -377,6 +216,268 @@ const imagenes = [
 
             </div>
             {/*-------------------------------------------------------------------------------------------------*/}
+
+            {/*Controles de acceso */}
+            {/*titulo de las nuevas Controles de acceso */}
+            <div className="mt-1 pt-5 row text-center justify-content-between">
+              <div style={{ paddingBottom: '50px' }}>
+                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Controles de Acceso</h4>
+                <hr style={{ color:'#0C3C5F'}}/>
+              </div>
+
+            </div>
+            {/*nuevas tarjetas Controles de acceso*/}
+            <div className="row row-cols-1 row-cols-md-3 mb-5 text-center" style={{ fontSize: '1.1rem'}}>
+
+              <div className="col tarjeta-zoom pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Sistema de torniquetes</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/Torniquete.png`} alt="network" style={{ height: '50px', margin: '10px' }}/>
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">
+                      Permite gestionar el flujo eficiente de ingresos tras una validación exitosa.
+                    </h5>
+                    <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify" }}>
+                      <li>- </li>
+                      <li>- </li>
+                      <li>- </li>
+                      <li>- </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                
+              <div className="col tarjeta-zoom  pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Sistemas de aproximación</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/wireless.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">Sistemas de accesos rapido, seguros y sin contacto, ya sea a traves de un codigo unico o a traves de aproximacion. </h5>
+
+                     
+                    <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify"}}>
+
+                      <li>- Tarjetas RFID</li>
+                      <li >- Codigo QR</li>
+                      <li>- </li>
+                      <li>- </li>
+                      <li>- </li>
+                      <li>- </li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+
+              <div className="col tarjeta-zoom  pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Sistemas biometricos</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/cableadoestructurado.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">Sistema de acceso a traves de caracteristicas fisicas, esta será tu llave de identificación, otorgando la mayor seguridad a tu empresa.
+                      </h5>
+
+                      <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify"}}>
+
+                        <li>- Reconocimiento facial</li>
+                        <li>- Huella dactilar</li>
+                        <li>- </li>
+                        <li>- </li>
+                        <li>- </li>
+                        <li>- </li>
+                      </ul>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+            {/*boton contactanos de Controles de acceso*/}
+              <div>
+                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
+                  <Link
+                    className="nav-link fs-5"
+                    style={{ color: '#f0f0f0' }}
+                    to="/contact"
+                    state={{ asuntoPreseleccionado: "Networking" }} // Cambia por cada botón
+                  >
+                    Contáctanos
+                  </Link>
+                </button>
+              </div>
+            {/*-------------------------------------------------------------------------------------------------*/}
+
+
+            {/*networking */}
+            {/*titulo de las nuevas tarjetas networking */}
+            <div className="mt-1 pt-5 row text-center justify-content-between">
+              <div style={{ paddingBottom: '50px' }}>
+                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Networking</h4>
+                <hr style={{ color:'#0C3C5F'}}/>
+              </div>
+
+            </div>
+            {/*nuevas tarjetas networking*/}
+            <div className="row row-cols-1 row-cols-md-3 mb-5 text-center" style={{ fontSize: '1.1rem'}}>
+
+              <div className="col tarjeta-zoom pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Asesorias e integracion de servicios de red</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/network.png`} alt="network" style={{ height: '50px', margin: '10px' }}/>
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">
+                      Trabajamos junto a usted para definir los requerimientos y diseñar una red escalable,
+                      adaptada a su entorno. La infraestructura se implementará con tecnología y equipamiento adecuados, incorporando:
+                    </h5>
+                    <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify" }}>
+                      <li>- Seguridad (firewall, ISE)</li>
+                      <li>- Implementacion de politicas QoS</li>
+                      <li>- Administración redes LAN/WAN</li>
+                      <li>- Diseño de red</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                
+              <div className="col tarjeta-zoom  pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Wireless</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/wireless.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">Ofrecemos soluciones de conectividad para su diversidad de dispositivos inalámbricos asegurando; Robustez,
+                      seguridad y escalabilidad en la transmisión de los datos</h5>
+
+                     
+                    <ul className="list-unstyled mt-3 mb-4" style={{ textAlign: "justify"}}>
+
+                      <li>- Controlador de LAN Inalámbrica (WLC)</li>
+                      <li style={{marginLeft:'12px'}}>  Punto de acceso ligero (LAP)</li>
+                      <li>- A.P. autónomos</li>
+                      <li>- Análisis de espectro y RF</li>
+                      <li>- Cisco Meraki</li>
+                      <li>- Implementación wifi</li>
+                    </ul>
+                    </div>
+                </div>
+              </div>
+
+              <div className="col tarjeta-zoom  pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Cableado Estructurado</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/cableadoestructurado.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">Realizamos el levantamiento, diseño y proyección del cableado estructurado. 
+                      Además ofrecemos el servicio de mantenimiento preventivo y corrección para
+                      asegurar un rendimiento óptimo de su estructura alámbrica.
+                      <br/>
+                      <br/>
+                      Tambien contamos con certificaciones de puntos de red.
+                      </h5>
+                    </div>
+                </div>
+              </div>
+            </div>
+            {/*boton contactanos de networking*/}
+              <div>
+                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
+                  <Link
+                    className="nav-link fs-5"
+                    style={{ color: '#f0f0f0' }}
+                    to="/contact"
+                    state={{ asuntoPreseleccionado: "Networking" }} // Cambia por cada botón
+                  >
+                    Contáctanos
+                  </Link>
+                </button>
+              </div>
+            {/*-------------------------------------------------------------------------------------------------*/}
+
+            {/*gestion de incidencias */}
+
+            {/*titulo de las nuevas tarjetas gestion de incidencias */}
+            <div className="mt-5 row text-center justify-content-between">
+              
+              <div>
+                <h4 style={{ fontWeight: 'bold', fontSize:'25pt', color:'#21AFEB',  paddingBottom: '20px' }}>Gestión de Incidencias</h4>
+                <hr style={{ color:'#0C3C5F'}}/>
+              </div>
+            </div>
+            {/*nuevas tarjetas gestion de incidencias*/}
+            <div className="row row-cols-1 row-cols-md-3 mb-5 text-center" style={{ fontSize: '1.1rem'}}>
+              
+              {/*Asistencia */}
+              <div className="col tarjeta-zoom pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Asistencia</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/Asistencia.png`} alt="network" style={{ height: '50px', margin: '10px' }}/>
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">
+                      Atención oportuna para reducir el impacto en las operaciones de su negocio, para ello contamos con dos niveles de asistencia; el primero registra, categoriza, diagnostica y da soluciones a requerimientos más recurrentes caso contrario pasa a Nivel 2 quienes investigan y resuelven.
+                    </h5>
+                    </div>
+                </div>
+              </div>
+
+              {/*Servicio Preventivo*/}
+              <div className="col tarjeta-zoom pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Servicio Preventivo</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/Preventivo.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">Anticipación a fallas, es crucial para su continuidad operativa. El objetivo de un contrato es aumentar la durabilidad de tu equipamiento tecnológico y minimizando fallas.</h5>
+                    </div>
+                </div>
+              </div>
+              
+              {/*Servicio Preventivo*/}
+              <div className="col tarjeta-zoom pt-4">
+                <div className="card h-100 d-flex flex-column mb-4 rounded-3 shadow-sm">
+                  <div className="card-header py-3 text-white" style={{ backgroundColor: '#21AFEB'}}>
+                    <h4 className="my-0 fw-normal">Servicio por Eventos</h4>
+                    <img src={`${process.env.PUBLIC_URL}/img/Eventos.png`} alt="wireless" style={{ height: '50px', margin: '10px' }} />
+                  </div>
+                  <div className="card-body d-flex flex-column justify-content-between">
+                    <h5 className="fuente-personalizada">Restauración de fallas inesperadas por efectos de la vida util u otras variables que provoquen que el equipo deje de funcionar</h5>
+                    </div>
+                </div>
+              </div>
+              
+
+            </div>
+
+            {/*boton contactanos de gestion de incidencias*/}
+              <div className=''>
+                <button type="button" className="w-100 btn btn-lg btn-primary mt-auto " style={{ backgroundColor: '#21AFEB', border: 'none' }}>
+                  <Link
+                    className="nav-link fs-5"
+                    style={{ color: '#f0f0f0' }}
+                    to="/contact"
+                    state={{ asuntoPreseleccionado: "Gestión de incidencias" }} // Cambia por cada botón
+                  >
+                    Contáctanos
+                  </Link>
+                </button>
+              </div>
+            {/*-------------------------------------------------------------------------------------------------*/}
+
+
+
 
           </div>
           
@@ -412,7 +513,7 @@ const imagenes = [
               </div>
             </div>
           </div>
-
+          
           {/* BLOQUE DE CLIENTES
           <div className="container mt-5 pt-1">
             <div className="container mt-1 row text-center justify-content-between">
@@ -422,7 +523,6 @@ const imagenes = [
               </div>
             </div>
           </div> */}
-
 
         </div> 
       </div>   
